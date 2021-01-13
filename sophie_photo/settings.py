@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+# conditional to check if env file is on root directory, otherwise it look for Environment set on the deployed host.
 if os.path.exists("env.py"):
     import env
 
