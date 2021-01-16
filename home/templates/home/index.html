@@ -2,5 +2,24 @@
 {% load static %}
 
 {% block main %}
-    <h1 class="display-4 text-success">Bootstrap working</h1>
+    <div class="hero d-flex">
+        <div class="home-inner container">
+            <div class="row">
+                <div class="hero-call col-lg-4">
+                    <h1 class="text-blue">Sophie Photography</h1>
+                    <button class="btn btn-lg button-blue">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-screen" id="about">
+    </div>
+    <div class="full-screen" id="video">
+        <video src="/media/production ID_4811927.mp4" type="video/mp4" playsinline="True" autoplay="true" muted="true" position="center" loop="true" id="video1">
+        </video>
+    </div>
+    <div class="full-screen" id="testimonials">
+    </div>
+    <div class="full-screen" id="gallery">
+    </div>
 {% endblock %}
