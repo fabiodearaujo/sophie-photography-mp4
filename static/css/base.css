@@ -7,14 +7,29 @@
 
 /* ---------------------------------------------- Home Landing page Styles */
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
 .hero {
     background-image:url('/media/jude-beck-unsplash.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
     height:100vh;
+    min-height: 700px;
+}
+
+.overlay {
+    position:absolute;
+    background-color: rgba(87, 87, 87, 0.5);
+    left: 0;
+    right: 0;
+    height:100vh;
+    min-height: 700px;
 }
 
 .hero .home-inner {
@@ -28,22 +43,80 @@
     font-family: 'Asap', sans-serif;
 }
 
+.line {
+    align-self: end;
+    width: 50%;
+    border-right: 20px solid white;
+    height: 50%;
+    margin-bottom: 4em;
+    right: -10px;
+    position: relative;
+}
+
+.line::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    border-color: white transparent transparent transparent;
+    right: -40px;
+    bottom: -30px;
+}
+
 .full-screen {
     height:100vh;
 }
 
 
-.nav-item {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+.nav-item a {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    color:#0015FF !important;
 }
 
-#nav-container a img {
+.nav-item a:hover {
+    font-size: 1.05em;
+    background-color: #bbdfeb;
+    border-radius: 50px;
+}
+
+.navbar-brand img {
     opacity: 1 !important;
 }
 
 #about {
-    background-color: #fff;
+    background-image: url('/media/irina-murza-unsplash.jpg');
+    height:100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-main {
+    position: relative;
+    width: 60%;
+    margin-top: 5%;
+    border-radius: 15px;
+    height: auto;
+    
+}
+
+.about-testimonial {
+    position: relative;
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 15px;
 }
 
 #video {
@@ -84,12 +157,20 @@
     }
 
     .hero-call h1 {
-        font-size: 4.5rem;
+        font-size: 5rem;
         width: 400px;
         font-weight: bolder;
         font-family: 'Asap', sans-serif;
         display: block;
     }
+
+    .hero-call h4 {
+        width: 400px;
+    }
+
+
+
+
 }
 
 
@@ -106,6 +187,14 @@
         font-family: 'Asap', sans-serif;
         display: block;
     }
+
+    .hero-call p {
+        width: 345px;
+    }
+
+    .line {
+        width: 175px;
+    }
 }
 
 
@@ -121,6 +210,10 @@
         font-weight: bolder;
         font-family: 'Asap', sans-serif;
         display: block;
+    }
+
+    #video {
+        left: -100px;
     }
 }
 

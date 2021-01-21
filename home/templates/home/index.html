@@ -2,17 +2,51 @@
 {% load static %}
 
 {% block main %}
-    <div class="hero d-flex">
+    <div class="hero lax d-flex">
+        <div class="overlay"></div>
         <div class="home-inner container">
             <div class="row">
                 <div class="hero-call col-lg-4">
                     <h1 class="text-blue">Sophie Photography</h1>
-                    <button class="btn btn-lg button-blue">Learn More</button>
+                    <h4 class="text-white">Be amazed by your own image!</h4>
+                    <p class="text-white text-center">SCROLL DOWN</p>
+                    <div class="line lax  lax_preset_slideY:544:101 lax_preset_fadeOut:100:0" ></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="full-screen" id="about">
+    <div id="about">
+        <div class="about-container overlay">
+            <div class="about-main text-center pt-3 text-blue glassify">
+                <h3 class="font-weight-bold">What do we do?</h3>
+                <p class="text-center font-weight-bold px-5">Our team is specialized in Family, Pregnancy, Newborn and Children pictures at the studio or at any location 
+                    choosen by you. We have the tools and creativity to register your moment for life. Check what our customers have to say about us:
+                </p>
+            </div>
+            <div class="about-testimonial text-center pt-3 text-blue glassify">
+                <h2 class="pb-3 font-weight-bold">TESTIMONIALS</h2>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner font-italic">
+                      <div class="carousel-item active">
+                        <h3 class="testimonial">Sinead - Dublin</h3>
+                        <p class="testimonial-text">"I couldn't recommend more, Sophie and her team registered my Pregnancy and my Newborn son and the results were amazing. 5 stars!"</p>
+                      </div>
+                      <div class="carousel-item">
+                        <h3 class="testimonial">Oisin - Dublin</h3>
+                        <p class="testimonial-text">"We had a Family session at our favourite park and the pictures were amazing. Definitely recommended."</p>
+                      </div>
+                      <div class="carousel-item">
+                        <h3 class="testimonial">Maria - Dublin</h3>
+                        <p class="testimonial-text">"The team were amazing with the kids in my daughter's birthday party. Thank you for the amazing professional work."</p>
+                      </div>
+                      <div class="carousel-item">
+                        <h3 class="testimonial">John - Dublin</h3>
+                        <p class="testimonial-text">"My kids had a great time during the session at the Studio. I was impressed by the scenarios they were able to create."</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
     </div>
     <div class="full-screen" id="video">
         <video src="/media/production ID_4811927.mp4" type="video/mp4" playsinline="True" autoplay="true" muted="true" position="center" loop="true" id="video1">
