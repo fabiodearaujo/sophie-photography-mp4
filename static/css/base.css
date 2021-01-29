@@ -146,7 +146,18 @@ body {
 }
 
 #packages {
-    background-color:aquamarine;
+    background-image: url('/media/franciele-cunha-unsplash.jpg');
+    height:100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#packages .packages-call {
+    font-size: 5em;
+    font-weight: bold;
+
 }
 
 #signin {
