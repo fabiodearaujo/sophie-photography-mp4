@@ -27,21 +27,27 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'home' %}">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-blue" href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-blue" href="#packages">PACKAGES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-blue" href="#contact">CONTACT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-blue" href="#">SIGN IN</a>
-                        </li>
+                        {% if request.path == "/" %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'home' %}">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="#v-package">PACKAGES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="#contact">CONTACT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-blue" href="#">SIGN IN</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'home' %}">HOME</a>
+                            </li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
