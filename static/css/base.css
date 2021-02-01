@@ -176,7 +176,7 @@ body {
 }
 
 
-/* ---------------------------------------------- Packages page Styles */
+/* ---------------------------------------------- Products page Styles */
 
 #packages-page {
     padding-top: 100px;
@@ -187,6 +187,15 @@ body {
     height: 400px;
     width: 100%;
 }
+
+
+
+/* ---------------------------------------------- Product Detail page Styles */
+
+.pic-detail-size {
+    height:500px;
+}
+
 
 
 
@@ -227,8 +236,6 @@ body {
     }
 
 
-
-
 }
 
 
@@ -253,6 +260,8 @@ body {
     .line {
         width: 175px;
     }
+
+
 }
 
 
@@ -274,7 +283,7 @@ body {
        font-size: 2.2em;
    }
 
-
+   
 }
 
 
