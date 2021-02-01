@@ -261,6 +261,9 @@ body {
         width: 175px;
     }
 
+    .navbar {
+        opacity: 100% !important;
+    }
 
 }
 
