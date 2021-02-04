@@ -44,27 +44,6 @@ body {
     font-family: 'Asap', sans-serif;
 }
 
-.line {
-    align-self: end;
-    width: 50%;
-    border-right: 20px solid white;
-    height: 50%;
-    margin-bottom: 4em;
-    right: -10px;
-    position: relative;
-}
-
-.line::after {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 30px 0 30px;
-    border-color: white transparent transparent transparent;
-    right: -40px;
-    bottom: -30px;
-}
 
 .full-screen {
     height:100vh;
@@ -183,6 +162,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.packages-bg {
+    background-color:#a8a4a6;
+}
+
 .pic-fixed-size {
     height: 400px;
     width: 100%;
@@ -201,8 +184,13 @@ body {
 }
 
 
-
 /* ---------------------------------------------- Website color scheme fixings */
+
+.nav-glassify {
+    background-color: #d5ecfd;
+    opacity: 60%;
+}
+
 
 .glassify {
     background-color: #d5ecfd;
@@ -214,8 +202,37 @@ body {
     color:#0015FF !important;
 }
 
+/* ---------------------------------------------- Landing page Arrow */
+
+.line {
+    align-self: end;
+    width: 50%;
+    border-right: 20px solid white;
+    height: 50%;
+    margin-bottom: 4em;
+    right: -10px;
+    position: relative;
+}
+
+.line::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 30px;
+    border-color: white transparent transparent transparent;
+    right: -40px;
+    bottom: -30px;
+}
 
 
+
+/* ---------------------------------------------- Background Parallax */
+
+.parallax-bg {
+    transition: initial;
+}
 
 /* --------------------------------------------- Media Queries */
 
