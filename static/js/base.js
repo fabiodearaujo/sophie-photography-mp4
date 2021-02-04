@@ -10,7 +10,7 @@ function parallax() {
 
     $('.parallax-bg').css('background-position', 'center '+(wScroll*(-0.2))+'px');
 
-    $('.parallax-line').css('margin-top', (wScroll)+'px');
+    $('.parallax-line').css('margin-top', (wScroll*0.6)+'px');
     $('.parallax-line').css('opacity', (100-(wScroll/2))+'%');
 
 }
