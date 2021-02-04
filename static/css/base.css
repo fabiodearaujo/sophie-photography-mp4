@@ -193,9 +193,12 @@ body {
 /* ---------------------------------------------- Product Detail page Styles */
 
 .pic-detail-size {
-    height:500px;
+    width: 450px;
 }
 
+.product-detail-container {
+    width: 400px;
+}
 
 
 
