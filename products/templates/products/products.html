@@ -4,10 +4,27 @@
 {% block content %}
 <div class="container-fluid packages-bg text-blue">
     <div class="row">
-        <div class="col text-center mt-3">
-            <h2 id="packages-page">Packages & Extras</h2>
-            <hr class="w-50 mb-1">
+        <div class="title-order container">
+            <div>
+                <h2 id="packages-page">Packages & Extras</h2>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Order by
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item text-blue" href="#">Price: lower-higher</a>
+                    <a class="dropdown-item text-blue" href="#">Price: higher-lower</a>
+                    <a class="dropdown-item text-blue" href="#">Name: A to Z</a>
+                    <a class="dropdown-item text-blue" href="#">Name: Z to A</a>
+                    <a class="dropdown-item text-blue" href="#">Ratings</a>
+                    <a class="dropdown-item text-blue" href="#">Category</a>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="col text-center mt-3">
+        <hr class="w-50 mb-1">
     </div>
     <div class="row">
         <div class="product-container col-10 offset-1">
