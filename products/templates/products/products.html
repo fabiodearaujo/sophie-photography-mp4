@@ -17,7 +17,7 @@
                     <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=desc">Price: higher-lower</a>
                     <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=name&direction=asc">Name: A to Z</a>
                     <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=name&direction=desc">Name: Z to A</a>
-                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=asc">Category</a>
+                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=category&direction=desc">Category</a>
                     <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=rating&direction=desc">Ratings</a>
                 </div>
             </div>
@@ -49,6 +49,9 @@
                                 <div class="row">
                                     <div class="col">
                                         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                        {% if product.category %}
+                                            <p class="small mt-1 mb-0"><i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}</p>
+                                        {% endif %}
                                         {% if product.rating %}
                                             <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                         {% else %}
