@@ -163,7 +163,7 @@ body {
 
 .packages-bg {
     background-color:#a8a4a6;
-    min-height:auto;
+    min-height:100vh;
 }
 
 .pic-fixed-size {
