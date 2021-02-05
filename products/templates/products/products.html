@@ -8,17 +8,17 @@
             <div>
                 <h2 id="packages-page">Packages & Extras</h2>
             </div>
-            <div class="btn-group">
+            <div class="btn-group py-4">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                 Order by
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item text-blue" href="#">Price: lower-higher</a>
-                    <a class="dropdown-item text-blue" href="#">Price: higher-lower</a>
-                    <a class="dropdown-item text-blue" href="#">Name: A to Z</a>
-                    <a class="dropdown-item text-blue" href="#">Name: Z to A</a>
-                    <a class="dropdown-item text-blue" href="#">Ratings</a>
-                    <a class="dropdown-item text-blue" href="#">Category</a>
+                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=asc">Price: lower-higher</a>
+                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=desc">Price: higher-lower</a>
+                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=name&direction=asc">Name: A to Z</a>
+                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=name&direction=desc">Name: Z to A</a>
+                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=asc">Category</a>
+                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=rating&direction=desc">Ratings</a>
                 </div>
             </div>
         </div>
