@@ -211,6 +211,18 @@ body {
     background-color: #0015FF !important;
 }
 
+.back-arrow-link {
+    color:#0015FF !important;
+}
+
+.back-arrow-link:hover {
+    font-size: 1.05em;
+}
+
+.back-no-decoration {
+    text-decoration: none !important;
+}
+
 /* ---------------------------------------------- Landing page Arrow */
 /* Arrow CSS shape based on the video from DesignCourse - https://www.youtube.com/watch?v=P5zGTEGPpu4 */
 

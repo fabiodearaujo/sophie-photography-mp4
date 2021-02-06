@@ -8,19 +8,25 @@
             <div>
                 <h2 id="packages-page">Packages & Extras</h2>
             </div>
-            <div class="btn-group py-4">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Order by
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=asc">Price: lower-higher</a>
-                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=desc">Price: higher-lower</a>
-                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=name&direction=asc">Name: A to Z</a>
-                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=name&direction=desc">Name: Z to A</a>
-                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=category&direction=desc">Category</a>
-                    <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=rating&direction=desc">Ratings</a>
+            {% if search_term %}
+                <h2>
+                    <a href="{% url 'products' %}?sort=category&direction=desc"><i class="fas fa-arrow-alt-circle-left pr-3 my-3 text-blue"></i></a>
+                </h2>
+            {% else %}
+                <div class="btn-group py-4">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Order by
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=asc">Price: lower-higher</a>
+                        <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=price&direction=desc">Price: higher-lower</a>
+                        <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=name&direction=asc">Name: A to Z</a>
+                        <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=name&direction=desc">Name: Z to A</a>
+                        <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=category&direction=desc">Category</a>
+                        <a class="dropdown-item text-blue" href="{% url 'products' %}?sort=rating&direction=desc">Ratings</a>
+                    </div>
                 </div>
-            </div>
+            {% endif %}
         </div>
     </div>
     <div class="col text-center mt-3">
@@ -84,6 +90,9 @@
                     {% endif %}
                 {% endfor %}
             </div>
+            <p class="text-blue mt-3 text-center text-md-left">
+                {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% else %} available in Total.{% endif %}
+            </p>
         </div>
     </div>
 </div>

@@ -1,3 +1,32 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block content %}
+<div class="container-fluid packages-bg text-blue">
+    <div class="row">
+        <div class="title-order container">
+            <div>
+                <h2 id="packages-page">Shopping Trolley</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col text-center mt-3">
+        <hr class="w-50 mb-1">
+    </div>
+    <div class="container">
+        <div class="col">
+            {% if bag_items %}
+                <div class="table-responsive rounded"></div>
+            {% else %}
+                <h2 class="mt-5">
+                    <p class="lead mb-5">Your bag is empty.</p>
+                    <a class="back-no-decoration" href="{% url 'products' %}?sort=category&direction=desc">
+                        <i class="fas fa-arrow-alt-circle-left pr-3 mb-3 back-arrow-link"></i>
+                    </a>
+                    <span class="text-blue">Keep Shopping</span>
+                </h2>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
