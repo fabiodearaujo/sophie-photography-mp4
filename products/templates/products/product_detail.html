@@ -3,42 +3,68 @@
 
 {% block content %}
 <div class="container-fluid packages-bg">
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2 text-blue">
-            <h2 id="packages-page">
-                <a href="{% url 'products' %}?sort=category&direction=desc"><i class="fas fa-arrow-alt-circle-left pr-3 mb-3 back-arrow-link"></i></a>
-                {{product.name}}
-            </h2>
-            <div class="card mb-5 border-0">
+    <div class="row text-blue offset-xl-2 offset-lg-1 offset-md-1 pl-3">
+        <h2 id="packages-top-row">
+            <a class="link-blue-nd" href="{% url 'products' %}?sort=category&direction=desc">
+                <i class="fas fa-arrow-alt-circle-left pr-1 mb-3"></i>
+                Back
+            </a>
+            
+        </h2>
+    </div>
+    <div class="row flex product-detail-container">
+        <div class="col-xl-4 col-lg-6 col-md-6 offset-xl-2 offset-lg-1 offset-md-1 mb-5 text-blue">
+            <div class="border-0">
                 {% if product.image %}
                 <a href="#">
-                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="img-product-detail" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="#">
-                    <img class="card-img-top" src="../../../media/noimage.png" alt="{{ product.name }}">
+                    <img class="img-product-detail" src="../../../media/noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
-                <div class="card-footer bg-white pt-0 border-0 text-left">
+            </div>   
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="pt-0 border-0 text-left detail-content">
+                <div class="mb-5 px-3 text-blue">
+                    <h2 class="pb-3">{{product.name}}</h2>
+                    <p class="pb-3">{{ product.description }}</p>
+                    <p class="text-left font-weight-bold">${{ product.price }}</p>
+                    {% if product.category %}
+                        <p class="small mt-1 mb-3"><i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}</p>
+                    {% endif %}
+                    {% if product.rating %}
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    {% else %}
+                        <small class="text-muted">No Rating</small>
+                    {% endif %}
                     <div class="row">
-                        <div class="col">
-                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                            {% if product.category %}
-                                <p class="small mt-1 mb-0"><i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}</p>
-                            {% endif %}
-                            {% if product.rating %}
-                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                            {% else %}
-                                <small class="text-muted">No Rating</small>
-                            {% endif %}
-                            <p class="mt-3">{{ product.description }}</p>
-                        </div>
+                        <a id="add-to-trolley" href="#" class="btn btn-lg btn-primary text-center text-white font-weight-bold px-5 mt-5">
+                            <i class="fas fa-cart-arrow-down px-1 py-3"></i>  Add to Trolley
+                        </a>
+                    </div>
+                    <div class="row mt-5">
+                        <p class="descr-link font-weight-bold">
+                            <a class="link-blue-nd" href="{% url 'products' %}?sort=category&direction=desc">
+                                <i class="fas fa-shopping-cart pr-1"></i>
+                                Go to Trolley
+                            </a>
+                            
+                        </p>
+                    </div>
+                    <div class="row mt-3">
+                        <p class="descr-link font-weight-bold">
+                            <a class="link-blue-nd" href="{% url 'products' %}?sort=category&direction=desc">
+                                <i class="fas fa-arrow-alt-circle-left pr-1"></i>
+                                Back
+                            </a>
+                            
+                        </p>
                     </div>
                 </div>
             </div>
-            <h2>
-                <a href="{% url 'products' %}?sort=category&direction=desc"><i class="fas fa-arrow-alt-circle-left pr-3 mb-3 back-arrow-link"></i></a>
-            </h2>
         </div>
     </div>
 </div>

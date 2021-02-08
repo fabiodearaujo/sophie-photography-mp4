@@ -180,14 +180,35 @@ body {
 
 /* ---------------------------------------------- Product Detail page Styles */
 
+#packages-top-row {
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .pic-detail-size {
-    width: 450px;
+    height: 700px;
 }
 
 .product-detail-container {
-    width: 400px;
+    height: 100%;
 }
 
+.img-product-detail {
+    /* min-height: 350px; */
+    width: 100%;
+}
+
+.detail-content {
+    width: 100%;
+}
+
+#add-to-trolley:hover {
+    font-size: 1.5em;
+}
+
+.descr-link {
+    font-size: 1.7em;
+}
 
 /* ---------------------------------------------- Website color scheme fixings */
 
@@ -211,17 +232,15 @@ body {
     background-color: #0015FF !important;
 }
 
-.back-arrow-link {
+.link-blue-nd {
     color:#0015FF !important;
 }
 
-.back-arrow-link:hover {
+.link-blue-nd:hover {
     font-size: 1.05em;
-}
-
-.back-no-decoration {
     text-decoration: none !important;
 }
+
 
 /* ---------------------------------------------- Landing page Arrow */
 /* Arrow CSS shape based on the video from DesignCourse - https://www.youtube.com/watch?v=P5zGTEGPpu4 */
@@ -257,6 +276,17 @@ body {
 }
 
 /* --------------------------------------------- Media Queries */
+
+@media screen and (max-width:1500px) {
+    #add-to-trolley {
+        font-size: 1.4em;
+    }
+    
+    .descr-link {
+        font-size: 1.4em;
+    }
+}
+
 
 
 @media screen and (max-width:1200px) {
@@ -305,6 +335,26 @@ body {
 
     .navbar {
         opacity: 100% !important;
+    }
+
+    .btn-container a {
+        padding: 0 35px 0 35x !important;
+        font-size: 3.5em;
+    }
+
+    .btn-container a:hover {
+        padding: 0 35px 0 35x !important;
+        font-size: 4em;
+    }
+
+    @media screen and (max-width:1500px) {
+        #add-to-trolley {
+            font-size: 1.2em;
+        }
+        
+        .descr-link {
+            font-size: 1.2em;
+        }
     }
 
 }
