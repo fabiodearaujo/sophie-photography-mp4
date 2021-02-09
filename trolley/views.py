@@ -1,7 +1,26 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+
 
 # Create your views here.
 
 def view_trolley(request):
     """ View to connect and return the shopping trolley page """
     return render(request,'trolley/trolley.html')
+
+
+def add_to_trolley(request, item_id):
+    """ Add a quantity of the specified product to the shopping trolley """
+
+    quantity = int(request.POST.get('quantity'))
+    redirect_url = request.POST.get('redirect_url')
+    print(redirect_url)
+    trolley = request.session.get('trolley', {})
+
+    if item_id in list(trolley.keys()):
+        trolley[item_id] += quantity
+    else:
+        trolley[item_id] = quantity
+
+    request.session['trolley'] = trolley
+    print(request.session['trolley'])
+    return redirect(redirect_url)
