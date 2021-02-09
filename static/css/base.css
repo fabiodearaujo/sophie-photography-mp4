@@ -210,6 +210,9 @@ body {
     font-size: 1.7em;
 }
 
+.mobile-back {
+    display: none;
+}
 
 /* ---------------------------------------------- Website color scheme fixings */
 
@@ -379,6 +382,9 @@ body {
        font-size: 2.2em;
    }
 
+   .mobile-back {
+       display: block;
+   }
    
 }
 

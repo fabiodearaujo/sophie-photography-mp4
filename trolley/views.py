@@ -13,7 +13,6 @@ def add_to_trolley(request, item_id):
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
-    print(redirect_url)
     trolley = request.session.get('trolley', {})
 
     if item_id in list(trolley.keys()):
@@ -22,5 +21,4 @@ def add_to_trolley(request, item_id):
         trolley[item_id] = quantity
 
     request.session['trolley'] = trolley
-    print(request.session['trolley'])
     return redirect(redirect_url)
