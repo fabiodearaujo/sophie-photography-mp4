@@ -44,7 +44,17 @@
                                 <a class="nav-link text-blue" href="#">SIGN IN</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-blue" href="{% url 'view_trolley' %}"><i class="fas fa-shopping-cart"></i></a>
+                                {% if total == 0 %}
+                                    <a class="nav-link text-blue" href="{% url 'view_trolley' %}"><i class="fas fa-shopping-cart shop-trolley"></i></a>
+                                    <p class="my-0 text-blue font-weight-bold">
+                                            €0.00
+                                    </p>
+                                {% else %}
+                                    <a class="nav-link" href="{% url 'view_trolley' %}"><i class="fas fa-cart-arrow-down text-green shop-trolley"></i></a>
+                                    <p class="my-0 text-green font-weight-bold">
+                                        €{{ total|floatformat:2 }}
+                                    </p>
+                                {% endif %}
                             </li>
                         {% else %}
                             <li class="nav-item">
@@ -57,7 +67,17 @@
                                 <a class="nav-link text-blue" href="#">SIGN IN</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-blue" href="{% url 'view_trolley' %}"><i class="fas fa-shopping-cart"></i></a>
+                                {% if total == 0 %}
+                                    <a class="nav-link text-blue" href="{% url 'view_trolley' %}"><i class="fas fa-shopping-cart shop-trolley"></i></a>
+                                    <p class="my-0 text-blue font-weight-bold">
+                                            €0.00
+                                    </p>
+                                {% else %}
+                                    <a class="nav-link" href="{% url 'view_trolley' %}"><i class="fas fa-cart-arrow-down text-green shop-trolley"></i></a>
+                                    <p class="my-0 text-green font-weight-bold">
+                                        €{{ total|floatformat:2 }}
+                                    </p>
+                                {% endif %}
                             </li>
                             <div class="col-12 col-lg-4 ml-md-5 py-1 py-lg-0">
                                 <form method="GET" action="{% url 'products' %}">

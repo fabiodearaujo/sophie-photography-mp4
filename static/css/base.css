@@ -65,6 +65,10 @@ body {
     opacity: 1 !important;
 }
 
+.shop-trolley {
+    font-size: 1.6em;
+}
+
 #about {
     background-image: url('/media/irina-murza-unsplash.jpg');
     height:100vh;
@@ -230,6 +234,10 @@ body {
 
 .text-blue {
     color:#0015FF !important;
+}
+
+.text-green {
+    color:#167a02 !important;
 }
 
 .btn-primary {
