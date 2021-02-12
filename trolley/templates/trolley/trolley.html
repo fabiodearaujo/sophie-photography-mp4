@@ -31,7 +31,12 @@
                     {% for item in trolley_items %}
                         <tr>
                             <td class="p-3 w-25">
-                                <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                <!-- <img class="img-fluid rounded" src="{{ item.product.image.url }}"> -->
+                                {% if item.product.image %}
+                                    <img class="card-img-top pic-fixed-size" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                {% else %}
+                                    <img class="card-img-top pic-fixed-size" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                {% endif %}
                             </td>
                             <td class="py-3">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
@@ -44,13 +49,13 @@
                                 <p class="my-0">{{ item.quantity }}</p>
                             </td>
                             <td class="py-3">
-                                <p class="my-0">${{ item.product.price }}</p>
+                                <p class="my-0">€{{ item.product.price }}</p>
                             </td>
                         </tr>
                     {% endfor %}
                     <tr>
                         <td colspan="5" class="pt-5 text-right">
-                            <h6><strong>Trolley Total: ${{ total|floatformat:2 }}</strong></h6>
+                            <h6><strong>Trolley Total: €{{ total|floatformat:2 }}</strong></h6>
                         </td>
                     </tr>
                     <tr>

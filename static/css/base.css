@@ -25,7 +25,6 @@ body {
 
 .overlay {
     position:absolute;
-    /* background-color: rgba(87, 87, 87, 0.5); */
     background-color: rgba(117, 116, 116, 0.5);
     left: 0;
     right: 0;
@@ -82,7 +81,7 @@ body {
 
 .loaded-trolley {
     font-size: 1.6em;
-    color:#0003af;
+    color:#3e048a !important;
     text-shadow: 2px;
 }
 
@@ -92,7 +91,7 @@ body {
 }
 
 .loaded-trolley-value {
-    color:#0003af;
+    color:#3e048a !important;
 }
 
 
@@ -189,7 +188,7 @@ body {
 
 .packages-bg {
     background-color:#d0d6e4;
-    min-height:100vh;
+    min-height:100%;
 }
 
 .pic-fixed-size {
@@ -212,11 +211,11 @@ body {
 }
 
 .pic-detail-size {
-    height: 700px;
+    min-height: 700px;
 }
 
 .product-detail-container {
-    height: 100%;
+    min-height: 100%;
 }
 
 .img-product-detail {
@@ -272,11 +271,17 @@ body {
 }
 
 .link-blue-nd {
+    color:#0015FF !important;
+}
+
+.link-dark-blue-nd {
     color:#0003af !important;
 }
 
+
+
 .link-blue-nd:hover {
-    font-size: 1.05em;
+    font-size: 1.02em;
     text-decoration: none !important;
 }
 
