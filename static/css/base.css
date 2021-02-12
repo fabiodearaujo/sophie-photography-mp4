@@ -25,7 +25,17 @@ body {
 
 .overlay {
     position:absolute;
-    background-color: rgba(87, 87, 87, 0.5);
+    /* background-color: rgba(87, 87, 87, 0.5); */
+    background-color: rgba(117, 116, 116, 0.5);
+    left: 0;
+    right: 0;
+    height:100vh;
+    min-height: 700px;
+}
+
+.overlay-dark {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.15);
     left: 0;
     right: 0;
     height:100vh;
@@ -65,9 +75,27 @@ body {
     opacity: 1 !important;
 }
 
-.shop-trolley {
-    font-size: 1.6em;
+.empty-trolley {
+    font-size: 1.3em;
+    color: #0015FF !important;
 }
+
+.loaded-trolley {
+    font-size: 1.6em;
+    color:#0003af;
+    text-shadow: 2px;
+}
+
+
+.empty-trolley-value {
+    color: #0015FF !important;
+}
+
+.loaded-trolley-value {
+    color:#0003af;
+}
+
+
 
 #about {
     background-image: url('/media/irina-murza-unsplash.jpg');
@@ -127,6 +155,8 @@ body {
     z-index: 2;
     padding-top: 100px;
     padding-bottom: 100px;
+    margin-top: -10px;
+    background-color: rgb(8, 157, 184);
 }
 
 #packages {
@@ -166,12 +196,12 @@ body {
 }
 
 .packages-bg {
-    background-color:#a8a4a6;
+    background-color:#d0d6e4;
     min-height:100vh;
 }
 
 .pic-fixed-size {
-    height: 400px;
+    height: auto;
     width: 100%;
 }
 
@@ -221,14 +251,16 @@ body {
 /* ---------------------------------------------- Website color scheme fixings */
 
 .nav-glassify {
-    background-color: #d5ecfd;
-    opacity: 60%;
+    background-color: hsla(204, 97%, 64%, 0);
+    backdrop-filter: blur(5px);  
 }
 
 
 .glassify {
-    background-color: #d5ecfd;
-    opacity: 60%;
+    background-color: #1a90df26;  
+    backdrop-filter: blur(5px);
+    /* background-color: #d5ecfd;
+    opacity: 60%; */
 }
 
 
@@ -236,8 +268,12 @@ body {
     color:#0015FF !important;
 }
 
-.text-green {
-    color:#167a02 !important;
+.text-purple {
+    color:#7b1be9 !important;
+}
+
+.text-blue-dark {
+    color:#0003af !important;
 }
 
 .btn-primary {
@@ -245,7 +281,7 @@ body {
 }
 
 .link-blue-nd {
-    color:#0015FF !important;
+    color:#0003af !important;
 }
 
 .link-blue-nd:hover {
@@ -345,8 +381,9 @@ body {
         width: 175px;
     }
 
-    .navbar {
-        opacity: 100% !important;
+    .nav-glassify {
+        background-color: hsla(204, 97%, 64%, 0);
+        backdrop-filter: blur(50px);  
     }
 
     .btn-container a {
