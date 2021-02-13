@@ -219,7 +219,6 @@ body {
 }
 
 .img-product-detail {
-    /* min-height: 350px; */
     width: 100%;
 }
 
@@ -227,8 +226,21 @@ body {
     width: 100%;
 }
 
+.qty_input {
+    font-size: 1.2em;
+}
+
+.decrement-qty {
+    height: fit-content;
+}
+
+.increment-qty {
+    height: fit-content;
+}
+
+
 #add-to-trolley:hover {
-    font-size: 1.5em;
+    background-color: #3e048a !important;
 }
 
 .descr-link {
