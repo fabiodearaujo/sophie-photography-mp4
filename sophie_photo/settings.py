@@ -78,6 +78,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'trolley.contexts.trolley_contents',
                 'django.template.context_processors.media',
+                'django.template.context_processors.static',
             ],
         },
     },

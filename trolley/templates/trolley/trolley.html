@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid packages-bg text-blue">
+<div class="container-fluid trolley-bg text-blue">
     <div class="row">
         <div class="title-order container">
             <div>
@@ -33,9 +33,9 @@
                             <td class="p-3 w-25">
                                 <!-- <img class="img-fluid rounded" src="{{ item.product.image.url }}"> -->
                                 {% if item.product.image %}
-                                    <img class="card-img-top pic-fixed-size" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                    <img class="pic-fixed-size rounded" src="{{ item.product.image }}" alt="{{ product.name }}">
                                 {% else %}
-                                    <img class="card-img-top pic-fixed-size" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <img class="pic-fixed-size rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 {% endif %}
                             </td>
                             <td class="py-3">

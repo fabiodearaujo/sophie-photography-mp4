@@ -251,6 +251,15 @@ body {
     display: none;
 }
 
+
+/* ---------------------------------------------- Trolley page Styles */
+
+.trolley-bg {
+    height: 100vh;
+    background-color:#d0d6e4;
+}
+
+
 /* ---------------------------------------------- Website color scheme fixings */
 
 .nav-glassify {
