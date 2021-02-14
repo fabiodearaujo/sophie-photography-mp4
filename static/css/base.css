@@ -255,7 +255,7 @@ body {
 /* ---------------------------------------------- Trolley page Styles */
 
 .trolley-bg {
-    height: 100vh;
+    height: 100%;
     background-color:#d0d6e4;
 }
 
