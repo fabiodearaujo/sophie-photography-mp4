@@ -9,6 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    background-color:#d0d6e4;
 }
 
 
@@ -257,6 +258,10 @@ body {
 .trolley-bg {
     height: 100%;
     background-color:#d0d6e4;
+}
+
+.update-link, .remove-item {
+    cursor: pointer;
 }
 
 
