@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
+from products.models import Product
 
-
-# Create your views here.
 
 def view_trolley(request):
     """ View to connect and return the shopping trolley page """
@@ -11,6 +11,7 @@ def view_trolley(request):
 def add_to_trolley(request, item_id):
     """ Add a quantity of the specified product to the shopping trolley """
 
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     trolley = request.session.get('trolley', {})
@@ -19,6 +20,7 @@ def add_to_trolley(request, item_id):
         trolley[item_id] += quantity
     else:
         trolley[item_id] = quantity
+        messages.success(request, f'Added this {product.name} to the Trolley')
 
     request.session['trolley'] = trolley
     return redirect(redirect_url)
