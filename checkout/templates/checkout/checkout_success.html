@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid checkout-page">
+        <div class="container glassify">
+            <div class="row text-center pt-3">
+                <div class="col">
+                    <h2 class="logo-font mb-4 text-blue-dark py-3">Thank You {{ order.full_name }}!</h2>
+                    <hr>
+                    <p class="text-blue-dark">Your order information is below. A confirmation email with booking information will be sent to <strong>{{ order.email }}</strong>.</p>
+                </div>
+            </div>
+
+            <div class="row flex justify-content-center">
+                <div class="col-12 col-lg-7">
+                    <div class="order-confirmation-wrapper p-3">
+                        <div class="row">
+                            <div class="col">
+                                <small class="text-muted font-weight-bold">Order Info:</small>
+                            </div>
+                        </div>
+    
+                        <div class="row pt-3">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 text-blue font-weight-bold">Order Number</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0">{{ order.order_number }}</p>
+                            </div>
+                        </div>
+    
+                        <div class="row pt-3">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 text-blue font-weight-bold">Order Date</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0">{{ order.date }}</p>
+                            </div>
+                        </div>
+    
+                        <div class="row pt-3">
+                            <div class="col">
+                                <small class="text-muted font-weight-bold">Order Details:</small>
+                            </div>
+                        </div>
+    
+                        {% for item in order.lineitems.all %}
+                        <div class="row pt-3">
+                            <div class="col-12 col-md-4">
+                                <p class="small mb-0 text-blue font-weight-bold">
+                                    {{ item.product.name }}
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="small mb-0">{{ item.quantity }} @ €{{ item.product.price }} each</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+    
+                        <div class="row pt-3">
+                            <div class="col-12 col-md-4">
+                                <p class="mb-0 text-blue font-weight-bold">Order Total</p>
+                            </div>
+                            <div class="col-12 col-md-8 text-md-right">
+                                <p class="mb-0">{{ order.order_total }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-7"></div>
+            </div>
+            <hr>
+            <div class="row justify-content-center py-3">
+                <div class="col-12 col-lg-7 text-center">
+                    <a href="#" class="btn btn-black rounded-0 my-2">
+                        <span class="icon mr-2">
+                            <i class="fas fa-camera text-blue-dark"></i>
+                        </span>
+                        <span class="text-uppercase font-weight-bold link-dark-blue-nd">Please don't forget to schedule your session and see you soon!</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
