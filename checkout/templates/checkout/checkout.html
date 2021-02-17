@@ -2,6 +2,10 @@
 {% load static %}
 {% load trolley_tools %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
 {% block content %}
     <div class="checkout-page container-fluid text-blue pb-5">
         <div class="container">
@@ -61,12 +65,12 @@
                         <fieldset class="rounded px-3 mb-5">
                             <legend class="fieldset-label small text-blue px-2 w-auto">Address</legend>
                             {{ order_form.phone_number | as_crispy_field }}
-                            {{ order_form.country | as_crispy_field }}
-                            {{ order_form.postcode | as_crispy_field }}
-                            {{ order_form.town_or_city | as_crispy_field }}
                             {{ order_form.street_address1 | as_crispy_field }}
                             {{ order_form.street_address2 | as_crispy_field }}
+                            {{ order_form.town_or_city | as_crispy_field }}
                             {{ order_form.county | as_crispy_field }}
+                            {{ order_form.country | as_crispy_field }}
+                            {{ order_form.postcode | as_crispy_field }}
                             <div class="form-check form-check-inline float-right mr-0">
                                 {% if user.is_authenticated %}
                                     <label class="form-check-label" for="id-save-info">Save this address information to my profile</label>
@@ -113,4 +117,11 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block script %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
