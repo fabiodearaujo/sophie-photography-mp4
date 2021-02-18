@@ -261,13 +261,11 @@ body {
     cursor: pointer;
 }
 
-/* ---------------------------------------------- Trolley page Styles */
+/* ---------------------------------------------- Checkout page Styles */
 
 .checkout-page {
-    margin-top: 100px;
+    margin-top: 150px;
 }
-
-
 
 
 /* ---------------------------------------------- Messages Toast Styles */
