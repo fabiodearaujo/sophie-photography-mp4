@@ -267,6 +267,41 @@ body {
     margin-top: 150px;
 }
 
+/* ---------------------------------------------- Allauth page Styles */
+
+.login-page {
+    padding-top: 250px;
+    background-image:url('/media/jude-beck-unsplash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+.signin-container {
+    width: fit-content;
+}
+
+.allauth-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #adc5e4;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.allauth-style-input:focus,
+.allauth-style-input:active {
+  box-shadow: 5px #7fa5ca;
+}
+
+.allauth-style-input::placeholder {
+    color: #235e96;
+}
 
 /* ---------------------------------------------- Messages Toast Styles */
 
@@ -300,6 +335,12 @@ body {
     border-radius: 15px;
 }
 
+.glassify-blurry {
+    background-color: #015d9b26;  
+    backdrop-filter: blur(60px);
+    border-radius: 15px;
+}
+
 
 .text-blue {
     color:#0015FF !important;
@@ -307,6 +348,33 @@ body {
 
 .text-purple {
     color:#7b1be9 !important;
+}
+
+.text-blue-outlined {
+    color:#0015ff !important;
+    text-shadow:
+    -1px -1px 0 #fff,
+     0   -1px 0 #fff,
+     1px -1px 0 #fff,
+     1px  0   0 #fff,
+     1px  1px 0 #fff,
+     0    1px 0 #fff,
+    -1px  1px 0 #fff,
+    -1px  0   0 #fff;
+}
+
+
+.text-orange-outlined {
+    color:#fcd071 !important;
+    text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
 }
 
 .text-blue-dark {
@@ -324,7 +392,6 @@ body {
 .link-dark-blue-nd {
     color:#0003af !important;
 }
-
 
 
 .link-blue-nd:hover {

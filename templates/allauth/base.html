@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container-fluid checkout-page">
+    <div class="container glassify">
+      <div class="row text-center pt-3">
+        <div class="col-6">
+          <div class="allauth-form-inner-content">
+            {% block inner_content %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
