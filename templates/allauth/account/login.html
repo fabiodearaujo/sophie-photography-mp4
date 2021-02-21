@@ -11,8 +11,8 @@
 
   {% get_providers as socialaccount_providers %}
 
-  <form class="login font-weight-bold" method="POST" action="{% url 'account_login' %}">
-    <div class="col text-blue-outlined">
+  <form method="POST" action="{% url 'account_login' %}">
+    <div class="col">
       {% csrf_token %}
       {{ form|crispy }}
       {% if redirect_field_value %}

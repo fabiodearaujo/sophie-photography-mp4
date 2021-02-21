@@ -45,9 +45,26 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-blue" href="#contact">CONTACT US</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-blue" href="{% url 'account_login' %}">SIGN IN</a>
-                                </li>
+                                {% if request.user.is_authenticated %}
+                                    {% if request.user.is_superuser %}
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link text-blue">PACKAGES MANAGEMENT</a>
+                                    </li>
+                                    {% endif %}
+                                    <li class="nav-item">
+                                        <a href="{% url 'profile' %}" class="nav-link text-blue">MY PROFILE</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{% url 'account_logout' %}" class="nav-link text-blue">SIGN OUT</a>
+                                    </li>
+                            {% else %}
+                                    <li class="nav-item">
+                                        <a href="{% url 'account_signup' %}" class="nav-link text-blue">REGISTER</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{% url 'account_login' %}" class="nav-link text-blue">SIGN IN</a>
+                                    </li>
+                            {% endif %}
                                 <li class="nav-item">
                                     {% if total == 0 %}
                                         <a class="nav-link" href="{% url 'view_trolley' %}"><i class="fas fa-shopping-cart empty-trolley"></i></a>
@@ -69,7 +86,7 @@
                                     <a class="nav-link" href="{% url 'products' %}?sort=category&direction=desc">PACKAGES & EXTRAS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-blue" href="#">SIGN IN</a>
+                                    <a class="nav-link text-blue" href="{% url 'account_login' %}">SIGN IN</a>
                                 </li>
                                 <li class="nav-item">
                                     {% if total == 0 %}

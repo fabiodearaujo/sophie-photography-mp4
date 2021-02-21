@@ -278,6 +278,7 @@ body {
     height:100vh;
 }
 
+
 .signin-container {
     width: fit-content;
 }
@@ -302,6 +303,22 @@ body {
 .allauth-style-input::placeholder {
     color: #235e96;
 }
+
+
+.allauth-form-inner-content input {
+    border-color: #0015ff;
+
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #3f71a3;
+}
+
+
 
 /* ---------------------------------------------- Messages Toast Styles */
 
