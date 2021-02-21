@@ -1,3 +1,13 @@
 .profiles-page {
     padding-top: 100px;
 }
+
+select,
+select option {
+  color: #0003af;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #235e96 !important;
+}
