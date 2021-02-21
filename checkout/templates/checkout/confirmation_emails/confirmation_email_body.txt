@@ -1,0 +1,20 @@
+
+Hello {{ order.full_name }}!
+
+This is a confirmation of your order at Sophie Photography:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+
+
+We've got your phone number on file as {{ order.phone_number }}. We will get in touch with you within 48 hours to schedule your session.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+Sophie Photography
