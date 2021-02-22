@@ -95,7 +95,9 @@ body {
     color:#3e048a !important;
 }
 
-
+.manage-link {
+    text-align: center;
+}
 
 #about {
     background-image: url('/media/irina-murza-unsplash.jpg');
@@ -248,6 +250,14 @@ body {
 .mobile-back {
     display: none;
 }
+
+/* ---------------------------------------------- Product Management pages Styles */
+
+.product-mgn-page {
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 
 /* ---------------------------------------------- Trolley page Styles */
@@ -524,6 +534,10 @@ body {
     .btn-container a:hover {
         padding: 0 35px 0 35x !important;
         font-size: 4em;
+    }
+
+    .manage-link {
+        text-align: left;
     }
 
 }
