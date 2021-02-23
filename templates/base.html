@@ -53,19 +53,8 @@
                                         <a href="{% url 'account_logout' %}" class="nav-link text-blue">SIGN OUT</a>
                                     </li>
                                     {% if request.user.is_superuser %}
-                                        <li class="list-inline-item dropdown">
-                                            <a class="text-blue nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <div class="manage-link">
-                                                    <div><i class="fas fa-wrench empty-trolley"></i></div>
-                                                    <p class="font-weight-bold my-0 mt-2">MANAGE</p>
-                                                </div>
-                                            </a>
-                                            <div class="dropdown-menu border-0 glassify text-blue" aria-labelledby="user-options">
-                                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                            </div>
+                                        <li class="nav-item">
+                                            <a href="{% url 'add_product' %}" class="nav-link text-danger px-5"><i class="fas fa-wrench empty-trolley"></i>ADD PACKAGE</a>
                                         </li>
                                     {% endif %}
                                 {% else %}
@@ -104,19 +93,8 @@
                                         <a href="{% url 'account_logout' %}" class="nav-link text-blue">SIGN OUT</a>
                                     </li>
                                     {% if request.user.is_superuser %}
-                                        <li class="list-inline-item dropdown">
-                                            <a class="text-blue nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <div class="text-center">
-                                                    <div><i class="fas fa-wrench empty-trolley"></i></div>
-                                                    <p class="font-weight-bold my-0 mt-2">MANAGE</p>
-                                                </div>
-                                            </a>
-                                            <div class="dropdown-menu border-0 glassify" aria-labelledby="user-options">
-                                                    <a href="{% url 'add_product' %}" class="dropdown-item">Add Product</a>
-                                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                            </div>
+                                        <li class="nav-item">
+                                            <a href="{% url 'add_product' %}" class="nav-link text-danger px-5"><i class="fas fa-wrench empty-trolley"></i>ADD PACKAGE</a>
                                         </li>
                                     {% endif %}
                                 {% else %}
