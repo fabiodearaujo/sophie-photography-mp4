@@ -3,10 +3,11 @@
 
 {% block content %}
 <div class="container-fluid packages-bg text-blue">
-    <div class="row">
-        <div class="title-order container">
+    <div class="container pt-3 mb-5 glassify" id="packages-page">
+    <div class="col">
+        <div class="title-order">
             <div>
-                <h2 id="packages-page">Packages & Extras</h2>
+                <h2 class="pt-5 pb-3">Packages & Extras</h2>
             </div>
             {% if search_term %}
                 <h2>
@@ -108,6 +109,7 @@
                 {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% else %} available in Total.{% endif %}
             </p>
         </div>
+    </div>
     </div>
 </div>
 {% endblock %}
