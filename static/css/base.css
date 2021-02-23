@@ -216,6 +216,7 @@ body {
 
 .product-detail-container {
     min-height: 100%;
+    margin-top: 150px;
 }
 
 .img-product-detail {
