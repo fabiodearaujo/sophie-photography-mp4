@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<section id="main-hero">
     <div class="hero parallax-bg d-flex">
         <div class="overlay"></div>
         <div class="home-inner container">
@@ -15,6 +16,8 @@
             </div>
         </div>
     </div>
+</section>
+<section id="about-testm">
     <div id="about">
         <div class="about-container overlay-dark">
             <div class="about-main text-center pt-3 text-blue-dark glassify">
@@ -48,10 +51,14 @@
             </div>
         </div>
     </div>
+</section>
+<section id="imersive">
     <div id="video">
         <video src="/media/production ID_4811927.mp4" type="video/mp4" playsinline="True" autoplay="true" muted="true" position="center" loop="true" id="video1">
         </video>
     </div>
+</section>
+<section id="book-now">
     <div class="full-screen" id="packages">
         <div class="container text-center glassify">
             <p class="text-blue pt-5">Choose your Package</p>
@@ -63,6 +70,5 @@
             </a>
         </div>
     </div>
-    <div class="full-screen" id="contact">
-    </div>
+</section>
 {% endblock %}
