@@ -10,12 +10,13 @@ def contact_us(request):
     if request.method == "POST":
         message_name = request.POST['message-name']
         message_email = request.POST['message-email']
+        message_subject = request.POST['message-subject']
         message_text = request.POST['message-text']
 
         #send the email
         # Example from Codemy Youtube channel: https://www.youtube.com/watch?v=xNqnHmXIuzU
         send_mail(
-            'New message from ' + message_name,
+            (message_name + " - " + message_subject),
             message_text,
             message_email,
             [settings.DEFAULT_FROM_EMAIL],
