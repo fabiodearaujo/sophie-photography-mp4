@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid contactus-page">
+        <div class="container glassify">
+            <div class="row text-center pt-3">
+                <div class="col">
+                    <h2 class="logo-font mb-4 text-blue-dark py-3">Get in Touch!</h2>
+                    <hr>
+                    <p class="text-blue-dark">If you have any question or want to get in touch before buying any Package, please fill the form bellow that we will get in touch as soon as possible.</p>
+                </div>
+            </div>
+            <form action="{% url 'contact_us' %}" method="POST">
+                {% csrf_token %}      
+                <div class="row">
+                    <div class="col-lg-6 py-3">
+                        <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                    </div>
+                    <div class="col-lg-6 py-3">
+                        <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                    </div>
+                    <div class="col-12 py-3">
+                        <textarea name="message-text" class="form-control mb-30" placeholder="Your Message" rows="5"></textarea>
+                    </div>
+                    <div class="col text-center py-3">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-12 col-lg-7"></div>
+            </div>
+            <hr>
+            <div class="row justify-content-center py-3">
+                <div class="col-12 col-lg-7 text-center">
+                    <a href="{% url 'home' %}" class="btn btn-black rounded-0 my-2">
+                        <span class="icon mr-2">
+                            <i class="fas fa-arrow-alt-circle-left pr-1 text-blue-dark"></i>
+                        </span>
+                        <span class="text-uppercase font-weight-bold link-dark-blue-nd">Back.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

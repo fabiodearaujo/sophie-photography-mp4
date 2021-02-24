@@ -234,6 +234,16 @@ body {
 
 
 
+/* ---------------------------------------------- Contact Us page Styles */
+
+.contactus-page {
+    padding-top: 150px;
+    height: 100vh;
+    background-image: url(/media/background.png);
+}
+
+
+
 /* ---------------------------------------------- Products page Styles */
 
 #packages-page {
