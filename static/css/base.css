@@ -212,6 +212,7 @@ body {
 
 .social-element a {
     color: #ffffff;
+    text-decoration: none;
 }
 
 .social-element a:hover {

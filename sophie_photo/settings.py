@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 # conditional to check if env file is on root directory, otherwise it look for Environment set on the deployed host.
 if os.path.exists("env.py"):
     import env
@@ -121,12 +122,17 @@ WSGI_APPLICATION = 'sophie_photo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# if 'DATABASE_URL' in os.environ:
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
+# else:
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.sqlite3',
+    #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    #     }
+    # }
 
 
 # Password validation
