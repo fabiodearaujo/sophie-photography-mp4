@@ -17,10 +17,10 @@
     <div class="container">
         <div class="col">
             {% if trolley_items %}
-            <div class="table-responsive rounded glassify">
-                <table class="table table-sm table-borderless">
+            <div class="rounded glassify">
+                <table class="table-responsive table-sm table-borderless">
                     <thead class="text-blue">
-                        <tr>
+                        <tr class="px-3 py-3">
                             <th scope="col">Product Info</th>
                             <th scope="col"></th>
                             <th scope="col">Price</th>
@@ -30,22 +30,25 @@
                     </thead>
 
                     {% for item in trolley_items %}
-                        <tr>
-                            <td class="p-3 w-25">
+                        <tr class="py-3 px-3">
+                            <td class="py-3 t-large">
+                                <h4 class="py-3 mobile-tb-title">Product</h4>
                                 <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                             </td>
-                            <td class="py-3">
+                            <td class="py-3 t-small w-25">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                 <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                             </td>
-                            <td class="py-3">
+                            <td class="py-3 t-small">
+                                <h4 class="py-3 mobile-tb-title">Price</h4>
                                 <p class="my-0">€{{ item.product.price }}</p>
                             </td>
-                            <td class="py-3 w-25">
+                            <td class="py-3 t-large">
                                 <form class="form update-form" method="POST" action="{% url 'adjust_trolley' item.item_id %}">
                                     {% csrf_token %}
+                                    <h4 class="py-3 mobile-tb-title">Quantity</h4>
                                     <div class="form-group">
-                                        <div class="input-group">
+                                        <div class="input-group text-nowrap">
                                             <div class="input-group-prepend">
                                                 <button class="decrement-qty btn btn-primary rounded-0" 
                                                     data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
@@ -72,14 +75,16 @@
                                 <a class="update-link text-info"><small>Update</small></a>
                                 <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                             </td>
-                            <td class="py-3">
+                            <td class="py-3 t-small">
+                                <h4 class="py-3 mobile-tb-title">Subtotal</h4>
                                 <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                             </td>
                         </tr>
                     {% endfor %}
+
                     <tr>
                         <td colspan="5" class="pt-5 pb-5 text-right">
-                            <h6 class="pr-3"><strong>Trolley Total: €{{ total|floatformat:2 }}</strong></h6>
+                            <h4 class="pr-3"><strong>Trolley Total: €{{ total|floatformat:2 }}</strong></h4>
                         </td>
                     </tr>
                     <tr>
