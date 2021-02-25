@@ -235,6 +235,11 @@ body {
     margin-bottom: 0;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 
 /* ---------------------------------------------- Contact Us page Styles */
