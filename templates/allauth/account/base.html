@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="container-fluid login-page overlay">
+  <div class="container-fluid login-page overlay px-0">
     <div class="container">
-      <div class="row">
-        <div class="allauth-form-inner-content glassify-blurry text-blue">
+      <div class="row justify-content-center">
+        <div class="allauth-form-inner-content glassify-blurry text-blue" style="width:95%;">
           <div class="py-3 px-5">
             {% block inner_content %}
             {% endblock %}
@@ -12,5 +12,10 @@
         </div>
       </div>
     </div>
+    <footer style="position:fixed;bottom:0;">
+      <div class="footer-copyright">
+          <p><a href="https://github.com/fabioaraujo76/sophie-photography-mp4" target="_blank"  style="text-decoration: none;"><i class="far fa-copyright"></i> Fabio De Araujo 2021</a></p>
+      </div>
+    </footer>
   </div>
 {% endblock %}

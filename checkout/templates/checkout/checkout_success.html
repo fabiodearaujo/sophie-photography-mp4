@@ -88,7 +88,7 @@
                             <span class="text-uppercase font-weight-bold link-dark-blue-nd">Back to Profile.</span>
                         </a>
                     {% else %}
-                        <a href="#" class="btn btn-black rounded-0 my-2">
+                        <a href="{% url 'contact_us' %}" class="btn btn-black rounded-0 my-2">
                             <span class="icon mr-2">
                                 <i class="fas fa-camera text-blue-dark"></i>
                             </span>
@@ -98,5 +98,10 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="footer-copyright">
+                <p><a href="https://github.com/fabioaraujo76/sophie-photography-mp4" target="_blank"  style="text-decoration: none;"><i class="far fa-copyright"></i> Fabio De Araujo 2021</a></p>
+            </div>
+        </footer>
     </div>
 {% endblock %}

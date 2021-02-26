@@ -7,7 +7,7 @@
         <div class="col">
             <div class="title-order">
                 <div>
-                    <h2 class="pt-5 pb-3">Packages & Extras</h2>
+                    <h2 class="pt-3 pb-3">Packages & Extras</h2>
                 </div>
                 {% if search_term %}
                     <h2>
@@ -105,8 +105,8 @@
                         {% endif %}
                     {% endfor %}
                 </div>
-                <p class="text-blue mt-3 text-center font-weight-bold text-md-left">
-                    {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% else %} available in Total.{% endif %}
+                <p class="text-blue mt-3 text-center font-weight-bold text-md-left pt-3">
+                    {{ products|length }} Photo Sessions{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% else %} available in Total.{% endif %}
                 </p>
             </div>
         </div>

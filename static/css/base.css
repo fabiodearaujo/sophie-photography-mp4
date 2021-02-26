@@ -43,7 +43,7 @@ body {
 }
 
 .hero .home-inner {
-    padding-top: 300px;
+    padding-top: 250px;
 }
 
 
@@ -413,7 +413,7 @@ footer {
 /* ---------------------------------------------- Allauth page Styles */
 
 .login-page {
-    padding-top: 250px;
+    padding-top: 150px;
     background-image:url('/media/jude-beck-unsplash.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -482,7 +482,7 @@ footer {
 }
 
 
-/* ---------------------------------------------- Website color scheme fixings */
+/* ---------------------------------------------- Website color scheme */
 
 .nav-glassify {
     background-color: hsla(204, 97%, 64%, 0);
@@ -608,6 +608,18 @@ footer {
     .descr-link {
         font-size: 1.2em;
     }
+
+    .hero .home-inner {
+        padding-top: 150px;
+        padding-left: 80px;
+    }
+
+    .hero-call h1 {
+        font-size: 4rem;
+        font-weight: bolder;
+        font-family: 'Asap', sans-serif;
+        display: block;
+    }
 }
 
 
@@ -619,8 +631,7 @@ footer {
     }
 
     .hero-call h1 {
-        font-size: 5rem;
-        width: 400px;
+        font-size: 4rem;
         font-weight: bolder;
         font-family: 'Asap', sans-serif;
         display: block;
@@ -642,11 +653,6 @@ footer {
         font-size: 2.3em;
     }
 
-    .img-product-detail {
-        height: 80% !important;
-        width: 80% !important;
-    }
-
     .qty_input {
         font-size: .8em;
     }
@@ -661,12 +667,12 @@ footer {
 @media screen and (max-width:990px) {
 
     .hero .home-inner {
-        padding-top: 350px;
+        padding-top: 150px;
+        padding-left: 80px;
     }
 
     .hero-call h1 {
         font-size: 4rem;
-        width: 350px;
         font-weight: bolder;
         font-family: 'Asap', sans-serif;
         display: block;
@@ -714,7 +720,6 @@ footer {
 
     .hero-call h1 {
         font-size: 3rem;
-        width: 300px;
         font-weight: bolder;
         font-family: 'Asap', sans-serif;
         display: block;
