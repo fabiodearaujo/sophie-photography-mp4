@@ -232,6 +232,14 @@ nav {
     font-size: 1em;
 }
 
+.footer-copyright p a {
+    color: #fdff6d !important;
+}
+
+.footer-copyright p a:hover {
+    color: #ffffff !important;
+}
+
 .footer-copyright p {
     margin-bottom: 0;
 }
@@ -294,7 +302,7 @@ footer {
 }
 
 .product-detail-footer {
-    position: absolute !important;
+    position: relative !important;
 }
 
 .pic-detail-size {
@@ -606,7 +614,8 @@ footer {
 @media screen and (max-width:1200px) {
 
     .hero .home-inner {
-        padding-top: 350px;
+        padding-top: 150px;
+        padding-left: 80px;
     }
 
     .hero-call h1 {
@@ -619,6 +628,31 @@ footer {
 
     .hero-call h4 {
         font-size: 1.2em;
+    }
+
+    #choose-package-call {
+        font-size: .8em;
+    }
+
+    .btn-container a {
+        font-size: 2.2em;
+    }
+
+    .btn-container a:hover {
+        font-size: 2.3em;
+    }
+
+    .img-product-detail {
+        height: 80% !important;
+        width: 80% !important;
+    }
+
+    .qty_input {
+        font-size: .8em;
+    }
+    
+    .descr-link {
+        font-size: .8em;
     }
 
 }
@@ -749,10 +783,6 @@ footer {
         width: 90%;
 }
 
-   .product-detail-footer {
-    position: relative !important;
-    }
-
     .contactus-footer {
         position: relative;
     }
@@ -784,7 +814,7 @@ footer {
     }
 
     .checkout-page {
-        width: 90%;
+        width: 95%;
     }
 
 }

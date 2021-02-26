@@ -19,6 +19,7 @@
 
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
+  font-size: 2em !important;
 }
 
 .stripe-style-input::placeholder {
