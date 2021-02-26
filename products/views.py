@@ -94,8 +94,13 @@ def edit_product(request, product_id):
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
+    # product = Product.objects.get(pk=product_id)
+    print(f'Esse eh o produto',product)
+    print(f'Esse eh o produto id',product_id)
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
+        # form = ProductForm(instance=product)
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated product!')
