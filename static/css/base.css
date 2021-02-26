@@ -246,10 +246,18 @@ footer {
 
 .contactus-page {
     padding-top: 150px;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(/media/background.png);
 }
 
+.contactus-footer {
+    position: absolute;
+}
+
+.contactus-container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
 
 /* ---------------------------------------------- Products page Styles */
 
@@ -657,8 +665,7 @@ footer {
     }
 
     .contactus-page {
-        height: 120%;
-        padding-bottom: 100px;
+        height: 100%;
     }
 
 }
@@ -705,7 +712,11 @@ footer {
 
    .product-detail-footer {
     position: relative !important;
-}
+    }
+
+    .contactus-footer {
+        position: relative;
+    }
 
 }
 
