@@ -6,7 +6,7 @@
         <div class="container sessions-container glassify">
             <div class="row text-center pt-3">
                 <div class="col">
-                    <h2 class="logo-font mb-4 text-blue-dark py-3">Thank You {{ order.full_name }}!</h2>
+                    <h2 class="logo-font mb-4 text-blue-dark">Thank You {{ order.full_name }}!</h2>
                     <hr>
                     {% if from_profile %}
                         <p class="text-blue-dark">Your order information is below. A confirmation email was sent to <strong>{{ order.email }}</strong> on the date of purchase.</p>
@@ -78,21 +78,21 @@
                 <div class="col-12 col-lg-7"></div>
             </div>
             <hr>
-            <div class="row justify-content-center py-3">
+            <div class="row justify-content-center pb-3">
                 <div class="col-12 col-lg-7 text-center">
                     {% if from_profile %}
-                        <a href="{% url 'profile' %}" class="btn btn-primary rounded my-2">
+                        <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
                             <span class="icon mr-2">
                                 <i class="fas fa-arrow-alt-circle-left pr-1 text-blue-dark"></i>
                             </span>
-                            <span class="text-uppercase font-weight-bold">Back to Profile.</span>
+                            <span class="text-uppercase font-weight-bold link-dark-blue-nd">Back to Profile.</span>
                         </a>
                     {% else %}
-                        <a href="{% url 'contact_us' %}" class="btn btn-primary rounded my-2">
+                        <a href="{% url 'contact_us' %}" class="btn btn-black rounded-0 my-2">
                             <span class="icon mr-2">
                                 <i class="fas fa-camera text-blue-dark"></i>
                             </span>
-                            <span class="text-uppercase font-weight-bold">Please don't forget to schedule your session. See you soon!</span>
+                            <span class="text-uppercase font-weight-bold link-dark-blue-nd">Please don't forget to schedule your session. See you soon!</span>
                         </a>
                     {% endif %}
                 </div>

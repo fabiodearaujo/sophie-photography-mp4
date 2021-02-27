@@ -300,7 +300,8 @@ footer {
 }
 
 .product-detail-footer {
-    position: relative !important;
+    position: fixed;
+    bottom: 0;
 }
 
 .pic-detail-size {
@@ -707,6 +708,10 @@ footer {
         height: 100%;
     }
 
+    .product-detail-footer {
+        position: relative;
+    }
+    
 }
 
 
