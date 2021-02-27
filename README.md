@@ -18,13 +18,14 @@ This is the Full Stack project for Code Institute course.
         4. As a First Time Visitor, I want to be able to book a photoshoot session and understand how it works.
         5. I want to register an account, easily login or logout, receive a confirmation email after registering and have a personalized user profile.
 
-  -   #### Returning Visitor Goals
+    -   #### Returning Visitor Goals
 
         1. As a Returning Visitor, I want to check my past purchases.
         2. As a Returning Visitor, I want to find community links.
         3. As a Returning Visitor, I want to be able to order the photo sessions by price or by name.
 
     -   #### Frequent User Goals
+
         1. As a Frequent User, I want to check to see if there are any newly added photo sessions.
         2. As a Frequent User, I want to update my details on my profile.
         3. As a Frequent User, I want to get in touch with the Studio.
@@ -42,12 +43,10 @@ This is the Full Stack project for Code Institute course.
 
 
 
-   ### Wireframes
+-   ### Wireframes
 
     -   Home Page Wireframe - [View](https://drive.google.com/file/d/1EV45ZmMr4QyCafh1h_XwiMk7pK8-Dxdc/view?usp=sharing)
-
     -   Home Page Wireframe JPG version - [View](https://drive.google.com/file/d/1oKXihibiugZ8QtmP7RD7DCeOKStWrmWa/view?usp=sharing)
-
     -   Website Logo Icon - [View](https://drive.google.com/file/d/13GM_sZ8SetQWAMI_kevy5dmUIaA5T0wZ/view?usp=sharing)
 
     
@@ -145,7 +144,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 
 ### Testing User Stories from User Experience (UX) Section
 
-   -   #### First Time Visitor Goals
+    -   #### First Time Visitor Goals
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the studio.
             -   Landing on the main hero page it has a call to scroll the page and the first section is talking about the Studio.
@@ -159,7 +158,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
             -   The webapp allows users to register, update the profile and also keep track of sessions purchased.
             -   A confirmation email is sent to the user when creating a user profile, reseting password as other user related actions. Also an email is sent when purchase is successful.
 
-  -   #### Returning Visitor Goals
+    -   #### Returning Visitor Goals
 
         1. As a Returning Visitor, I want to check my past purchases.
             -   When logged in, the user can check the past purchases on their profile page.
@@ -169,6 +168,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
             -   An order button is available when on the products page and they can be reordered acordingly with the options available.
 
     -   #### Frequent User Goals
+    
         1. As a Frequent User, I want to check to see if there are any newly added photo sessions.
             -   The user can return anytime to the site and check new added sessions on the Product pages as also on social media.
         2. As a Frequent User, I want to update my details on my profile.
