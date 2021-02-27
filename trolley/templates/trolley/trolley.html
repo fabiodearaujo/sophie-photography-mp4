@@ -90,14 +90,14 @@
                         </tr>
                         <tr>
                             <td colspan="5" class="text-right pr-3">
-                                <p class="descr-link font-weight-bold pb-3">
-                                    <a class="link-blue-nd" href="{% url 'products' %}?sort=category&direction=desc">
+                                <p class="font-weight-bold pb-3">
+                                    <a href="{% url 'products' %}?sort=category&direction=desc" class="btn btn-primary rounded">
                                         <i class="fas fa-arrow-alt-circle-left pr-1"></i>
                                         Keep Shopping
                                     </a>
                                 </p>
-                                <p class="descr-link font-weight-bold">
-                                    <a href="{% url 'checkout' %}" class="link-blue-nd">
+                                <p class="font-weight-bold">
+                                    <a href="{% url 'checkout' %}" class="btn btn-primary rounded">
                                         <i class="fas fa-lock"></i>
                                         Secure Checkout
                                     </a>
@@ -107,11 +107,11 @@
                     </table>
                 </div>
                 {% else %}
-                    <div class="container vh-100">
+                    <div class="container py-5">
                         <h2 class="mt-5">
                             <p class="lead mb-5">Your bag is empty.</p>
-                            <a class="link-blue-nd" href="{% url 'products' %}?sort=category&direction=desc">
-                                <i class="fas fa-arrow-alt-circle-left pr-2 mb-3 back-arrow-link"></i>
+                            <a class="btn btn-primary rounded font-weight-bold" href="{% url 'products' %}?sort=category&direction=desc">
+                                <i class="fas fa-arrow-alt-circle-left pr-2 back-arrow-link"></i>
                                 Keep Shopping
                             </a>
                         </h2>
@@ -120,11 +120,19 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer-copyright">
-            <p><a href="https://github.com/fabioaraujo76/sophie-photography-mp4" target="_blank"  style="text-decoration: none;"><i class="far fa-copyright"></i> Fabio De Araujo 2021</a></p>
-        </div>
-    </footer>
+    {% if trolley_items %}
+        <footer>
+            <div class="footer-copyright">
+                <p><a href="https://github.com/fabioaraujo76/sophie-photography-mp4" target="_blank"  style="text-decoration: none;"><i class="far fa-copyright"></i> Fabio De Araujo 2021</a></p>
+            </div>
+        </footer>
+    {% else %}
+        <footer  style="position:fixed; bottom:0;">
+            <div class="footer-copyright">
+                <p><a href="https://github.com/fabioaraujo76/sophie-photography-mp4" target="_blank"  style="text-decoration: none;"><i class="far fa-copyright"></i> Fabio De Araujo 2021</a></p>
+            </div>
+        </footer>
+    {% endif %}
 </div>
 {% endblock %}
 

@@ -65,23 +65,23 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row justify-content-center mt-3">
                                 <input type='submit' id="add-to-trolley" class="btn btn-lg btn-primary text-center text-white font-weight-bold px-5 mt-3" value="Add to Trolley">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </form>
-                        <div class="text-left mt-5 mb-2">                    
-                            <a href="{% url 'products' %}?sort=category&direction=desc" class="btn btn-outline-black rounded-0">
+                        <div class="row justify-content-center mt-5 mb-2">                    
+                            <a href="{% url 'products' %}?sort=category&direction=desc" class="btn btn-primary rounded">
                                 <span class="icon">
-                                    <i class="fas fa-arrow-alt-circle-left text-blue-dark pr-1"></i>
+                                    <i class="fas fa-arrow-alt-circle-left pr-1"></i>
                                 </span>
-                                <span class="font-weight-bold text-blue-dark">Back</span>
+                                <span class="font-weight-bold">Back</span>
                             </a>
-                            <a class="link-blue-nd pl-5" href="{% url 'view_trolley' %}">
+                            <a class="btn btn-primary rounded ml-3" href="{% url 'view_trolley' %}">
                                 <span class="icon">
-                                    <i class="fas fa-shopping-cart text-blue-dark pr-1"></i>
+                                    <i class="fas fa-shopping-cart pr-1"></i>
                                 </span>
-                                <span class="font-weight-bold text-blue-dark">Go to Trolley</span>
+                                <span class="font-weight-bold">Go to Trolley</span>
                             </a>
                         </div>
                     </div>

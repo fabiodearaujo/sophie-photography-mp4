@@ -93,20 +93,20 @@
                             <input type="hidden" value="{{ client_secret }}" name="client_secret">
                         </fieldset>
 
-                        <div class="submit-button text-right mt-5 mb-2">                    
-                            <a href="{% url 'view_trolley' %}" class="btn btn-outline-black rounded-0">
+                        <div class="submit-button text-center mt-5 mb-2">                    
+                            <a href="{% url 'view_trolley' %}" class="btn btn-primary rounded mr-3">
                                 <span class="icon">
-                                    <i class="fas fa-arrow-alt-circle-left text-blue-dark pr-1"></i>
+                                    <i class="fas fa-arrow-alt-circle-left"></i>
                                 </span>
-                                <span class="font-weight-bold text-blue-dark">Adjust trolley</span>
+                                <span class="font-weight-bold">Adjust trolley</span>
                             </a>
-                            <button id="submit-button" class="btn btn-black rounded-0">
-                                <span class="font-weight-bold text-blue-dark pr-1">Complete Order</span>
+                            <button id="submit-button" class="btn btn-primary rounded ml-3">
+                                <span class="font-weight-bold">Complete Order</span>
                                 <span class="icon">
-                                    <i class="fas fa-lock text-blue-dark"></i>
+                                    <i class="fas fa-lock"></i>
                                 </span>
                             </button>
-                            <p class="small text-danger my-0 pb-3">
+                            <p class="small text-danger my-0 py-3">
                                 <span class="icon">
                                     <i class="fas fa-exclamation-circle"></i>
                                 </span>

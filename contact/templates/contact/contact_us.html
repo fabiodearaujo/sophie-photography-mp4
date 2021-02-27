@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block content %}
-    <div class="container-fluid contactus-page px-0">
+    <div class="container-fluid contactus-page px-0 py-5 vh-100">
         <div class="container glassify contactus-container">
             <div class="row text-center pt-3">
                 <div class="col">
-                    <h2 class="logo-font mb-4 text-blue-dark py-3">Get in Touch!</h2>
+                    <h2 class="logo-font text-blue-dark py-0">Get in Touch!</h2>
                     <hr>
                     <p class="text-blue-dark">If you have any question or want to get in touch before buying any Package, please fill the form bellow that we will get in touch as soon as possible.</p>
                 </div>
@@ -26,7 +26,7 @@
                     <div class="col-12 py-3">
                         <textarea name="message-text" class="form-control mb-30" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <div class="col text-center py-3">
+                    <div class="col text-center pt-3">
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </div>
                 </div>
@@ -35,18 +35,18 @@
                 <div class="col-12 col-lg-7"></div>
             </div>
             <hr>
-            <div class="row justify-content-center py-3">
+            <div class="row justify-content-center pb-3">
                 <div class="col-12 col-lg-7 text-center">
-                    <a href="{% url 'home' %}" class="btn btn-black rounded-0 my-2">
+                    <a href="{% url 'home' %}" class="btn btn-primary rounded my-2">
                         <span class="icon mr-2">
-                            <i class="fas fa-arrow-alt-circle-left pr-1 text-blue-dark"></i>
+                            <i class="fas fa-arrow-alt-circle-left pr-1"></i>
                         </span>
-                        <span class="text-uppercase font-weight-bold link-dark-blue-nd">Back.</span>
+                        <span class="text-uppercase font-weight-bold">Back.</span>
                     </a>
                 </div>
             </div>
         </div>
-        <footer class="contactus-footer">
+        <footer style="position:fixed;bottom:0;">
             <div class="footer-copyright">
                 <p><a href="https://github.com/fabioaraujo76/sophie-photography-mp4" target="_blank"  style="text-decoration: none;"><i class="far fa-copyright"></i> Fabio De Araujo 2021</a></p>
             </div>

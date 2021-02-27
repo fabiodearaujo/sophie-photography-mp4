@@ -254,13 +254,11 @@ footer {
 /* ---------------------------------------------- Contact Us page Styles */
 
 .contactus-page {
-    padding-top: 150px;
+    padding-top: 50px;
     min-height: 100vh;
     background-image: url(/media/background.png);
-}
-
-.contactus-footer {
-    position: absolute;
+    background-size:cover;
+    background-repeat: repeat-y;
 }
 
 .contactus-container {
