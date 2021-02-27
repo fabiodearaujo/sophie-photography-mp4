@@ -316,6 +316,7 @@ footer {
 
 .qty_input {
     font-size: 1.2em;
+    width: 20%;
 }
 
 .decrement-qty {
