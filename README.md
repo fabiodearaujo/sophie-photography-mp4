@@ -144,42 +144,42 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 
 ### Testing User Stories from User Experience (UX) Section
 
-    -   #### First Time Visitor Goals
+-   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the studio.
-            -   Landing on the main hero page it has a call to scroll the page and the first section is talking about the Studio.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find examples of previous work.
-            -   All Sessions contain a produced photography to show how the work is when completed.
-        3. As a First Time Visitor, I want to look for testimonials to understand what their clients think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
-            -   The page shows testimonials and links to social media accounts where the customer can see the engagement with its followers as also more pictures of past works. 
-        4. As a First Time Visitor, I want to be able to book a photoshoot session and understand how it works.
-            -   All sessions has an explanation of what is going to be purchased, how many hours, location of photoshooting and extras.
-        5. I want to register an account, easily login or logout, receive a confirmation email after registering and have a personalized user profile.
-            -   The webapp allows users to register, update the profile and also keep track of sessions purchased.
-            -   A confirmation email is sent to the user when creating a user profile, reseting password as other user related actions. Also an email is sent when purchase is successful.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the studio.
+        -   Landing on the main hero page it has a call to scroll the page and the first section is talking about the Studio.
+    2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find examples of previous work.
+        -   All Sessions contain a produced photography to show how the work is when completed.
+    3. As a First Time Visitor, I want to look for testimonials to understand what their clients think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+        -   The page shows testimonials and links to social media accounts where the customer can see the engagement with its followers as also more pictures of past works. 
+    4. As a First Time Visitor, I want to be able to book a photoshoot session and understand how it works.
+        -   All sessions has an explanation of what is going to be purchased, how many hours, location of photoshooting and extras.
+    5. I want to register an account, easily login or logout, receive a confirmation email after registering and have a personalized user profile.
+        -   The webapp allows users to register, update the profile and also keep track of sessions purchased.
+        -   A confirmation email is sent to the user when creating a user profile, reseting password as other user related actions. Also an email is sent when purchase is successful.
 
-    -   #### Returning Visitor Goals
+-   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to check my past purchases.
-            -   When logged in, the user can check the past purchases on their profile page.
-        2. As a Returning Visitor, I want to find community links.
-            -   Community links are on the footer of the main page and easily found.
-        3. As a Returning Visitor, I want to be able to order the photo sessions by price or by name.
-            -   An order button is available when on the products page and they can be reordered acordingly with the options available.
+    1. As a Returning Visitor, I want to check my past purchases.
+        -   When logged in, the user can check the past purchases on their profile page.
+    2. As a Returning Visitor, I want to find community links.
+        -   Community links are on the footer of the main page and easily found.
+    3. As a Returning Visitor, I want to be able to order the photo sessions by price or by name.
+        -   An order button is available when on the products page and they can be reordered acordingly with the options available.
 
-    -   #### Frequent User Goals
-    
-        1. As a Frequent User, I want to check to see if there are any newly added photo sessions.
-            -   The user can return anytime to the site and check new added sessions on the Product pages as also on social media.
-        2. As a Frequent User, I want to update my details on my profile.
-            -   User can update their information at any time using the My Profile link at the Navbar.
-        3. As a Frequent User, I want to get in touch with the Studio.
-            -   Users can contact the Studio using the Contact Us form for any questions or Booking of sessions.
+-   #### Frequent User Goals
+
+    1. As a Frequent User, I want to check to see if there are any newly added photo sessions.
+        -   The user can return anytime to the site and check new added sessions on the Product pages as also on social media.
+    2. As a Frequent User, I want to update my details on my profile.
+        -   User can update their information at any time using the My Profile link at the Navbar.
+    3. As a Frequent User, I want to get in touch with the Studio.
+        -   Users can contact the Studio using the Contact Us form for any questions or Booking of sessions.
 
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+-   The Website was tested on Google Chrome, Microsoft Edge, Internet Explorer and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, Android and iPhones.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
