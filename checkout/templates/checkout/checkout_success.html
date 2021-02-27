@@ -81,18 +81,18 @@
             <div class="row justify-content-center py-3">
                 <div class="col-12 col-lg-7 text-center">
                     {% if from_profile %}
-                        <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+                        <a href="{% url 'profile' %}" class="btn btn-primary rounded my-2">
                             <span class="icon mr-2">
                                 <i class="fas fa-arrow-alt-circle-left pr-1 text-blue-dark"></i>
                             </span>
-                            <span class="text-uppercase font-weight-bold link-dark-blue-nd">Back to Profile.</span>
+                            <span class="text-uppercase font-weight-bold">Back to Profile.</span>
                         </a>
                     {% else %}
-                        <a href="{% url 'contact_us' %}" class="btn btn-black rounded-0 my-2">
+                        <a href="{% url 'contact_us' %}" class="btn btn-primary rounded my-2">
                             <span class="icon mr-2">
                                 <i class="fas fa-camera text-blue-dark"></i>
                             </span>
-                            <span class="text-uppercase font-weight-bold link-dark-blue-nd">Please don't forget to schedule your session. See you soon!</span>
+                            <span class="text-uppercase font-weight-bold">Please don't forget to schedule your session. See you soon!</span>
                         </a>
                     {% endif %}
                 </div>
