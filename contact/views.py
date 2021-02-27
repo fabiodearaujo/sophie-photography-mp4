@@ -3,7 +3,6 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
 
-# Create your views here.
 
 def contact_us(request):
     """ View to connect and return the contact us page """
@@ -13,8 +12,9 @@ def contact_us(request):
         message_subject = request.POST['message-subject']
         message_text = request.POST['message-text']
 
-        #send the email
-        # Example from Codemy Youtube channel: https://www.youtube.com/watch?v=xNqnHmXIuzU
+        """send the email
+        Example from Codemy Youtube channel:
+        https://www.youtube.com/watch?v=xNqnHmXIuzU"""
         send_mail(
             (message_name + " - " + message_subject),
             message_text,
@@ -29,6 +29,4 @@ def contact_us(request):
         return HttpResponseRedirect(reverse('contact_us'))
 
     else:
-        return render(request,'contact/contact_us.html')
-
-    
+        return render(request, 'contact/contact_us.html')
