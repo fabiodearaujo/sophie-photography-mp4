@@ -1,11 +1,9 @@
 
 
 //Function based on the video from Kevin Powell - https://www.youtube.com/watch?v=SmolT-tV5Lw&t=945s
-opacityValue = 0;
-
 $(window).scroll(function() {
     parallax();
-})
+});
 
 function parallax() {
     var wScroll = $(window).scrollTop();

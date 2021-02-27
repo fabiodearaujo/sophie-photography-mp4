@@ -27,7 +27,7 @@ This is the Full Stack project for Code Institute course.
     -   #### Frequent User Goals
         1. As a Frequent User, I want to check to see if there are any newly added photo sessions.
         2. As a Frequent User, I want to update my details on my profile.
-        3. As a Frequent User, I want to get in touch with the Studio
+        3. As a Frequent User, I want to get in touch with the Studio.
 
 -   ### Design
 
@@ -121,31 +121,67 @@ This is the Full Stack project for Code Institute course.
     - Visual Studio Code was used to write the code.
 
 
-
-
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the page of the project to ensure there were no syntax errors.
 
 -   [W3C Markup Validator](https://validator.w3.org/)
-    -   The validator picked up 2 different errors and 1 warning on the first run. The errors and warning were corrected.
-    -   Test passed with no Warnings or Errors.
+    -   Run the HTML validator and made the necessary corrections accordingly to the validator. The changes can be seen on my wrapping up commits of the project.
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
-    -   The validator found 1 Error and 493 Warnings in the Materialize CSS stylesheet. All other CSS were Valid.
-
--   [W3C Broken Link Checker](https://validator.w3.org/checklink?uri=https%3A%2F%2Fsbug-tracker.herokuapp.com%2F&hide_type=all&depth=&check=Check)
-    -   The validator found 1 redirection link that is now corrected.
+    -   Run the CSS Validator and made corrections that can be seen on Github on my latest commits wrapping up the project.
 
 -   [JSHint](https://jshint.com/)
-    -   There was missing one semicolon that was corrected.
+    -   No errors were reported to the JS scripts for the webapp.
 
 -   [Google Chrome LightHouse](https://drive.google.com/file/d/167AAaRL9cYvp9ewtYhp4r7K49wcsjTnM/view?usp=sharing)
     -   It was pointed out security flaw using an older version of JQuery, score improved after update.
     -   It was pointed out to use rel="noopener" on links to external websites for security, score improved after including it.
 
--   [PEP8 Checker](http://pep8online.com/) - [Error results](https://drive.google.com/file/d/1bpk_cfYu6r4yHhpD8Dfy_MZ65r4BYKQB/view?usp=sharing)
+-   [Flake8](http://pep8online.com/) - [Error results](https://drive.google.com/file/d/1bpk_cfYu6r4yHhpD8Dfy_MZ65r4BYKQB/view?usp=sharing)
     -   All warnings and lines out of PEP8 Style were corrected.
+    -   Still showing errors related to the import of checkout.signals and settings.py import env to check environment variables, but I can't remove these as they are important to the application to run.
 
+
+### Testing User Stories from User Experience (UX) Section
+
+   -   #### First Time Visitor Goals
+
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the studio.
+            -   Landing on the main hero page it has a call to scroll the page and the first section is talking about the Studio.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find examples of previous work.
+            -   All Sessions contain a produced photography to show how the work is when completed.
+        3. As a First Time Visitor, I want to look for testimonials to understand what their clients think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+            -   The page shows testimonials and links to social media accounts where the customer can see the engagement with its followers as also more pictures of past works. 
+        4. As a First Time Visitor, I want to be able to book a photoshoot session and understand how it works.
+            -   All sessions has an explanation of what is going to be purchased, how many hours, location of photoshooting and extras.
+        5. I want to register an account, easily login or logout, receive a confirmation email after registering and have a personalized user profile.
+            -   The webapp allows users to register, update the profile and also keep track of sessions purchased.
+            -   A confirmation email is sent to the user when creating a user profile, reseting password as other user related actions. Also an email is sent when purchase is successful.
+
+  -   #### Returning Visitor Goals
+
+        1. As a Returning Visitor, I want to check my past purchases.
+            -   When logged in, the user can check the past purchases on their profile page.
+        2. As a Returning Visitor, I want to find community links.
+            -   Community links are on the footer of the main page and easily found.
+        3. As a Returning Visitor, I want to be able to order the photo sessions by price or by name.
+            -   An order button is available when on the products page and they can be reordered acordingly with the options available.
+
+    -   #### Frequent User Goals
+        1. As a Frequent User, I want to check to see if there are any newly added photo sessions.
+            -   The user can return anytime to the site and check new added sessions on the Product pages as also on social media.
+        2. As a Frequent User, I want to update my details on my profile.
+            -   User can update their information at any time using the My Profile link at the Navbar.
+        3. As a Frequent User, I want to get in touch with the Studio.
+            -   Users can contact the Studio using the Contact Us form for any questions or Booking of sessions.
+
+
+### Further Testing
+
+-   The Website was tested on Google Chrome, Microsoft Edge and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, Android and iPhones.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 

@@ -84,7 +84,6 @@ nav {
 .loaded-trolley {
     font-size: 1.6em;
     color:#3e048a !important;
-    text-shadow: 2px;
 }
 
 
@@ -155,7 +154,7 @@ nav {
     padding-top: 100px;
 }
 
-#packages p {
+#packages h1 {
     font-size: 5em;
     font-weight: bold;
 }
@@ -256,9 +255,8 @@ footer {
 .contactus-page {
     padding-top: 50px;
     min-height: 100vh;
-    background-image: url(/media/background.png);
+    background-image: url('/media/jude-beck-unsplash.jpg');
     background-size:cover;
-    background-repeat: repeat-y;
 }
 
 .contactus-container {
@@ -374,7 +372,7 @@ footer {
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
+    background-color: #c93443;
     border-color: #dc3545;
     border-radius: 0;
 }
@@ -433,13 +431,12 @@ footer {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0 1px 3px 0 #adc5e4;
-  -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
 }
 
 .allauth-style-input:focus,
 .allauth-style-input:active {
-  box-shadow: 5px #7fa5ca;
+  box-shadow: 0 1px 3px 0 #7fa5ca;
 }
 
 .allauth-style-input::placeholder {
@@ -485,6 +482,7 @@ footer {
 
 .nav-glassify {
     background-color: hsla(204, 97%, 64%, 0);
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);  
 }
 
@@ -492,12 +490,14 @@ footer {
 .glassify {
     background-color: #015d9b26;  
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 15px;
 }
 
 .glassify-blurry {
     background-color: #015d9b26;  
     backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
     border-radius: 15px;
 }
 
@@ -688,12 +688,12 @@ footer {
     }
 
     .btn-container a {
-        padding: 0 35px 0 35x !important;
+        padding: 0 35px 0 35px !important;
         font-size: 3.5em;
     }
 
     .btn-container a:hover {
-        padding: 0 35px 0 35x !important;
+        padding: 0 35px 0 35px !important;
         font-size: 4em;
     }
 

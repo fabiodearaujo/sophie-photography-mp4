@@ -26,7 +26,7 @@
         <header>
             <nav class="navbar navbar-expand-lg fixed-top navbar-light nav-glassify">
                 <div class="container" id="nav-container">
-                    <a class="navbar-brand" href="{% url 'home' %}"><img src="{{ MEDIA_URL }}logo.svg" alt="Logo" height="50px"></a>
+                    <a class="navbar-brand" href="{% url 'home' %}"><img src="{{ MEDIA_URL }}logo.svg" alt="Logo" style="height:50px;"></a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -162,7 +162,7 @@
 
 
         {% block script %}
-        <script type="text/javascript">
+        <script>
             $('.toast').toast('show'); 
         </script>
         {% endblock %}
