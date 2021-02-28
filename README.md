@@ -339,31 +339,19 @@ For more information on deploying the App with Git follow this [link](https://de
 
 -   [Design Course Youtube](https://www.youtube.com/watch?v=P5zGTEGPpu4) - This video also gave me some insites to use on the website and helped me to create the arrow on the landing page.
 
--   [Unsplash.com](https://unsplash.com) and the photographers that made the pictures and videos available royalty free for use, here they are:
-```
-https://unsplash.com/@judebeck
+-   [Unsplash.com](https://unsplash.com) and the photographers that made the pictures available royalty free for use, here they are:
+    -   [Jude Beck](https://unsplash.com/@judebeck)
+    -   [Irina Murza](https://unsplash.com/@irinamurza)
+    -   [Franciele Cunha](https://unsplash.com/@francunhafoto)
+    -   [Katie Smith](https://unsplash.com/@katiesmith654)
+    -   [Amanda Ware](https://unsplash.com/@whimsicallyware)
+    -   [Tyler Nix](https://unsplash.com/@jtylernix)
+    -   [Lotte Meijer](https://unsplash.com/@alalot)
+    -   [Fotosuhi](https://unsplash.com/@fotosushi)
+    -   [Mandy Zhang](https://unsplash.com/@mandyunique)
 
-https://unsplash.com/@irinamurza
-
-https://unsplash.com/@dominic0ng
-
-https://unsplash.com/@itfeelslikefilm
-
-https://unsplash.com/@francunhafoto
-
-https://unsplash.com/@katiesmith654
-
-https://unsplash.com/@whimsicallyware
-
-https://unsplash.com/@jtylernix
-
-https://unsplash.com/@alalot
-
-https://unsplash.com/@fotosushi
-
-https://unsplash.com/@mandyunique
-
-```
+-   [Pexels](https://www.pexels.com) and the videographer that made available the video used on the main page of the website.
+    -   [Pavel Danilyuk](https://www.pexels.com/@pavel-danilyuk)
 
 -   Other Sources - Not less important, but also helpful, Stack Overflow, W3 Schools, Google Search and Python/Django documentation.
 
