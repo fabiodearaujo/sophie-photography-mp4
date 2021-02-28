@@ -200,6 +200,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 
 
 
+
 ## Deployment
 
 
@@ -337,6 +338,32 @@ For more information on deploying the App with Git follow this [link](https://de
 -   [Kevin Powell Youtube](https://www.youtube.com/watch?v=SmolT-tV5Lw&t=945s) - It was important to understand how Parallax work so I could built the same effect on my main page and also on the Navbar to change oppacity as the page scroll down.
 
 -   [Design Course Youtube](https://www.youtube.com/watch?v=P5zGTEGPpu4) - This video also gave me some insites to use on the website and helped me to create the arrow on the landing page.
+
+-   [Unsplash.com](https://unsplash.com) and the photographers that made the pictures and videos available royalty free for use, here they are:
+```
+https://unsplash.com/@judebeck
+
+https://unsplash.com/@irinamurza
+
+https://unsplash.com/@dominic0ng
+
+https://unsplash.com/@itfeelslikefilm
+
+https://unsplash.com/@francunhafoto
+
+https://unsplash.com/@katiesmith654
+
+https://unsplash.com/@whimsicallyware
+
+https://unsplash.com/@jtylernix
+
+https://unsplash.com/@alalot
+
+https://unsplash.com/@fotosushi
+
+https://unsplash.com/@mandyunique
+
+```
 
 -   Other Sources - Not less important, but also helpful, Stack Overflow, W3 Schools, Google Search and Python/Django documentation.
 
