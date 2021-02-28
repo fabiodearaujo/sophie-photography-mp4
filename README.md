@@ -4,7 +4,9 @@
 
 This is the Full Stack project for Code Institute course.
 
-<h2 style="text-align:center;"><img src="https://drive.google.com/file/d/1bzwBbpKRKGRlgpkS726B10TUgtbBYvdO/view?usp=sharing"></h2>
+<h2 style="text-align:center;"><img src="https://sophiephotography.s3-eu-west-1.amazonaws.com/readmefiles/SophiePhotography_responsive.jpg"></h2>
+
+
 
 ## User Experience (UX)
 
@@ -68,7 +70,7 @@ This is the Full Stack project for Code Institute course.
     -   ### General
         - The Database was laid with tables to reflect the need of the app at initial structure. It was taken in consideration that tables should be simple and data must be easy to retrieve and if necessary to expand for future improvements.
         
-        <p style="align=center;"><img src="https://drive.google.com/file/d/1O3BKdAzqGi4NEmzwQIBWzQZj5cPbghNB/view?usp=sharing"></p><br>
+        <p style="align=center;"><img src="https://sophiephotography.s3-eu-west-1.amazonaws.com/readmefiles/DBModel-SophiePhotography.JPG"></p><br>
         <h8>DB diagram created with <a href="https://dbdiagram.io/" target="_blank">DbDiagram.io</a></h8>
 
     -   DbDiagram.io Diagram - [View](https://dbdiagram.io/d/603a8b97fcdcb6230b21caad)
@@ -120,6 +122,7 @@ This is the Full Stack project for Code Institute course.
     - Visual Studio Code was used to write the code.
 
 
+
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate the page of the project to ensure there were no syntax errors.
@@ -133,13 +136,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 -   [JSHint](https://jshint.com/)
     -   No errors were reported to the JS scripts for the webapp.
 
--   [Google Chrome LightHouse](https://drive.google.com/file/d/167AAaRL9cYvp9ewtYhp4r7K49wcsjTnM/view?usp=sharing)
+-   [Google Chrome LightHouse](https://sophiephotography.s3-eu-west-1.amazonaws.com/readmefiles/Lighthousecheck.png)
     -   It was pointed out security flaw using an older version of JQuery, score improved after update.
     -   It was pointed out to use rel="noopener" on links to external websites for security, score improved after including it.
 
--   [Flake8](http://pep8online.com/) - [Error results](https://drive.google.com/file/d/1bpk_cfYu6r4yHhpD8Dfy_MZ65r4BYKQB/view?usp=sharing)
+-   [Flake8](https://pypi.org/project/flake8/)
     -   All warnings and lines out of PEP8 Style were corrected.
     -   Still showing errors related to the import of checkout.signals and settings.py import env to check environment variables, but I can't remove these as they are important to the application to run.
+
 
 
 ### Testing User Stories from User Experience (UX) Section
@@ -177,6 +181,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
         -   Users can contact the Studio using the Contact Us form for any questions or Booking of sessions.
 
 
+
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Microsoft Edge, Internet Explorer, Firefox and Safari browsers.
@@ -185,3 +190,160 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 
+
+### Known Bugs
+
+-   On Iphone devices, the buttons of quantity doesn't display correctly making them not proportional to the size of the form.
+-   Also on Iphone devices, the main page background image is showing bigger than it should be, but it is not causing usability problems.
+-   On all devices when cheking out, the spinner shows up and the footer jumps to the middle of the screen.
+-   On Internet Explorer the parallax effect doesn't work and cards also show with a humongous height, buttons update and delete at the trolley don't work and pictures are not shown in the correct size.
+
+
+
+## Deployment
+
+
+### Github
+
+The project was deployed to Heroku and AWS, and the code is at Github. To be able to deploy at anyones machine, you can do using the following steps...
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/fabioaraujo76/sophie-photography-mp4)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/fabioaraujo76/sophie-photography-mp4)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+### Running locally
+
+8. If you are running the project in your computer, you will need to create a env.py file on the root folder and include all environment variables following this exemple:
+-   At settings.py it is possible to identify the environment variables checking which ones are receiving os.environ.get:
+
+```
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+ ```
+
+- Inside the env.py file, the variables should be setup in this way:
+```
+import os
+os.environ.setdefault("SECRET_KEY", "SECRET_KEY_VALUE_HERE")
+os.environ.setdefault("DEVELOPMENT", "TRUE")
+etc...
+```
+
+9. If you are trying to setup on Heroku, the variables have to be setup on Heroku Environment. To create an app on Heroku, it will be necessary to sign in [here](https://signup.heroku.com/).
+
+    1.  After login create an App at Heroku following this [Steps](https://trailhead.salesforce.com/en/content/learn/v/projects/develop-heroku-applications/create-a-heroku-app).
+    1.  Set up the enironment variables.
+
+
+10. If you are running the app locally, your static files can be at your machine and the environment setting USE_AWS sould be set FALSE or Commented out. But if you are deploying on Heroku, you should create an AWS account and a public bucket on S3 to hold your files. If you prefer your static files can also be stored in another Cloud Service. If you are choosing AWS, follow the next [STEPS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html), just make sure to give Read permissions to your files so Heroku can read the files from AWS.
+    -   Just remember if using another service, the Environment Variables will be accordingly with the other provider.
+
+11. With the enviroment setup, run the dependencies installation:
+```
+$ pip install -r requirements.txt
+```
+or
+```
+$ pip3 install -r requirements.txt
+```
+
+12. Run migrations:
+```
+$ python manage.py migrate
+```
+or
+```
+$ python3 manage.py migrate
+```
+
+15. Create a superuser for your Database:
+```
+$ python manage.py createsuperuser
+```
+or
+```
+$ python3 manage.py createsuperuser
+```
+14. At this point the project should be read to run if doing locally:
+``` 
+$ python manage.py runserver
+```
+or
+```
+$ python3 manage.py renserver
+```
+
+15. If Deploying on Heroku, follow the next steps:
+    1.  Download and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line).
+    1.  If you haven't already, log in to your Heroku account and follow the prompts to [create a new SSH public key](https://devcenter.heroku.com/articles/keys).
+        ```
+        $ heroku login
+        ```
+    1.  Clone the repository
+        Use Git to clone sophiephotography's source code to your local machine.
+        ```
+        $ heroku git:clone -a sophiephotography 
+        $ cd sophiephotography
+        ```
+    1.  At the tab Settings, setup all Config Vars necessary for the App to run.
+    1.  Deploy your changes
+        Make some changes to the code you just cloned and deploy them to Heroku using Git.
+        ```
+        $ git add -A
+        $ git commit -m "make it better"
+        $ git push heroku main
+        ```
+
+For more information on deploying the App with Git follow this [link](https://devcenter.heroku.com/articles/git#ssh-git-transport).
+
+
+## Credits
+
+### Code
+
+-   [Code Institute](https://codeinstitute.net/) - This project was based on Boutique Ado from Code Institute that can be found at [Chris' Github Repository](https://github.com/ckz8780/boutique_ado_v1). 
+
+-   [Bootstrap 4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - The documentation part was important to understand and use the forms and components of the Framework.
+
+-   [Kevin Powell Youtube](https://www.youtube.com/watch?v=SmolT-tV5Lw&t=945s) - It was important to understand how Parallax work so I could built the same effect on my main page and also on the Navbar to change oppacity as the page scroll down.
+
+-   [Design Course Youtube](https://www.youtube.com/watch?v=P5zGTEGPpu4) - This video also gave me some insites to use on the website and helped me to create the arrow on the landing page.
+
+-   Other Sources - Not less important, but also helpful, Stack Overflow, W3 Schools, Google Search and Python/Django documentation.
+
+-   Tutor Support from Code Institute in special Jo Wings that shared her time to help me to solve few bugs I run into during the development process. 
+
+### Acknowledgements
+
+-   My Mentor Gerry for continuous helpful feedback.
+
+-   All friends and family that helped me to test and gave me valuable feedback.
