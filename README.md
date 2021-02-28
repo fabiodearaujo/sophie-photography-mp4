@@ -179,7 +179,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Microsoft Edge, Internet Explorer and Safari browsers.
+-   The Website was tested on Google Chrome, Microsoft Edge, Internet Explorer, Firefox and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, Android and iPhones.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.

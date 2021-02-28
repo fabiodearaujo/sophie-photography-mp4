@@ -178,20 +178,16 @@ if 'USE_AWS' in os.environ:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.\
-                password_validation.UserAttributeSimilarityValidator',
+        'NAME': (os.environ.get('USER_ATTR')),
     },
     {
-        'NAME': 'django.contrib.\
-                auth.password_validation.MinimumLengthValidator',
+        'NAME': (os.environ.get('MIN_LENG')),
     },
     {
-        'NAME': 'django.contrib.auth.\
-            password_validation.CommonPasswordValidator',
+        'NAME': (os.environ.get('COMM_PASS')),
     },
     {
-        'NAME': 'django.contrib.auth.\
-            password_validation.NumericPasswordValidator',
+        'NAME': (os.environ.get('NUMM_PASS')),
     },
 ]
 
