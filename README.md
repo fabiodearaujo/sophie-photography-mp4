@@ -1,8 +1,11 @@
-<h1 style="text-align=center;">Sophie Photograpy - Full Stack with Django Milestone Project</h1>
+# Sophie Photograpy
+## Full Stack with Django Milestone Project
+
+-   This is an ficticious photographer website to showcase a project using the Django Framework. This is the last project completing Code Institute course.
 
 [View the live project here.](https://sophiephotography.herokuapp.com/)
 
-This is the Full Stack project for Code Institute course.
+
 
 <h2 style="text-align:center;"><img src="https://sophiephotography.s3-eu-west-1.amazonaws.com/readmefiles/SophiePhotography_responsive.jpg"></h2>
 
@@ -197,7 +200,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 -   Also on Iphone devices, the main page background image is showing bigger than it should be, but it is not causing usability problems.
 -   On all devices when cheking out, the spinner shows up and the footer jumps to the middle of the screen.
 -   On Internet Explorer the parallax effect doesn't work and cards also show with a humongous height, buttons update and delete at the trolley don't work and pictures are not shown in the correct size.
-
+-   The footer doesn't stay on the bottom on some pages, eg. if you make a search that doen't return any product, the footer will go up as the page reduces the size.
 
 
 
