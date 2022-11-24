@@ -1,1 +1,0 @@
-web: gunicorn sophie_photo.wsgi:application
