@@ -3,7 +3,7 @@
 
 -   This is an ficticious photographer website to showcase a project using the Django Framework. This is the last project completing Code Institute course.
 
-[View the live project here.](https://sophiephotography.herokuapp.com/)
+[View the live project here.](https://sophiephotosample.onrender.com/)
 
 
 
@@ -116,9 +116,9 @@
 1.  [SQLite](https://www.sqlite.org/index.html)
     - SQL Database delivered together with Django Framework used in the development phase.
 1.  [PostgreSQL](https://www.postgresql.org/)
-    - SQL Database used by Heroku plataform used in the deployment and live website. 
-1.  [Heroku](https://heroku.com/)
-    - Heroku was used to deploy the project and have the app live.
+    - SQL Database used by the application setup at ElephantSQL.com. 
+1.  [Render](https://render.com/)
+    - Render was used to deploy the project and have the app live.
 1.  [AWS](https://aws.amazon.com/)
     - Cloud Bucket used to keep static files and media of the website.
 1.  [Visual Studio Code](https://code.visualstudio.com/)
@@ -209,7 +209,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate th
 
 ### Github
 
-The project was deployed to Heroku and AWS, and the code is at Github. To be able to deploy at anyones machine, you can do using the following steps...
+The project was deployed to Render, ElephantSQL and AWS, and the code is at Github. To be able to deploy at anyones machine, you can do using the following steps...
 
 ### Forking the GitHub Repository
 
@@ -262,16 +262,10 @@ os.environ.setdefault("DEVELOPMENT", "TRUE")
 etc...
 ```
 
-9. If you are trying to setup on Heroku, the variables have to be setup on Heroku Environment. To create an app on Heroku, it will be necessary to sign in [here](https://signup.heroku.com/).
-
-    1.  After login create an App at Heroku following this [Steps](https://trailhead.salesforce.com/en/content/learn/v/projects/develop-heroku-applications/create-a-heroku-app).
-    1.  Set up the enironment variables.
-
-
-10. If you are running the app locally, your static files can be at your machine and the environment setting USE_AWS sould be set FALSE or Commented out. But if you are deploying on Heroku, you should create an AWS account and a public bucket on S3 to hold your files. If you prefer your static files can also be stored in another Cloud Service. If you are choosing AWS, follow the next [STEPS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html), just make sure to give Read permissions to your files so Heroku can read the files from AWS.
+9. If you are running the app locally, your static files can be at your machine and the environment setting USE_AWS sould be set FALSE or Commented out. But if you are deploying on Render, you should create an AWS account and a public bucket on S3 to hold your files. If you prefer your static files can also be stored in another Cloud Service. If you are choosing AWS, follow the next [STEPS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html), just make sure to give Read permissions to your files so Render can read the files from AWS.
     -   Just remember if using another service, the Environment Variables will be accordingly with the other provider.
 
-11. With the enviroment setup, run the dependencies installation:
+10. With the enviroment setup, run the dependencies installation:
 ```
 $ pip install -r requirements.txt
 ```
@@ -280,7 +274,7 @@ or
 $ pip3 install -r requirements.txt
 ```
 
-12. Run migrations:
+11. Run migrations:
 ```
 $ python manage.py migrate
 ```
@@ -289,7 +283,7 @@ or
 $ python3 manage.py migrate
 ```
 
-15. Create a superuser for your Database:
+12. Create a superuser for your Database:
 ```
 $ python manage.py createsuperuser
 ```
@@ -297,7 +291,7 @@ or
 ```
 $ python3 manage.py createsuperuser
 ```
-14. At this point the project should be read to run if doing locally:
+13. At this point the project should be read to run if doing locally:
 ``` 
 $ python manage.py runserver
 ```
@@ -305,30 +299,6 @@ or
 ```
 $ python3 manage.py renserver
 ```
-
-15. If Deploying on Heroku, follow the next steps:
-    1.  Download and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line).
-    1.  If you haven't already, log in to your Heroku account and follow the prompts to [create a new SSH public key](https://devcenter.heroku.com/articles/keys).
-        ```
-        $ heroku login
-        ```
-    1.  Clone the repository
-        Use Git to clone sophiephotography's source code to your local machine.
-        ```
-        $ heroku git:clone -a sophiephotography 
-        $ cd sophiephotography
-        ```
-    1.  At the tab Settings, setup all Config Vars necessary for the App to run.
-    1.  Deploy your changes
-        Make some changes to the code you just cloned and deploy them to Heroku using Git.
-        ```
-        $ git add -A
-        $ git commit -m "make it better"
-        $ git push heroku main
-        ```
-
-For more information on deploying the App with Git follow this [link](https://devcenter.heroku.com/articles/git#ssh-git-transport).
-
 
 ## Credits
 
