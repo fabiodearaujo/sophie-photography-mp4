@@ -13,12 +13,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-"""
-conditional to check if env file is on root directory,
-otherwise it look for Environment set on the deployed host.4
-"""
-if os.path.exists("env.py"):
-    import env
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
