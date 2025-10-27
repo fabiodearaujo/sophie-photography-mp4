@@ -1,5 +1,13 @@
+#!/usr/bin/env bash
+# Exit on error
 set -o errexit
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-python manage.py collectstatic --noinput
-python manage.py makemigrations && python manage.py migrate
+
+# Upgrade pip and install requirements
+python3.11 -m pip install --upgrade pip
+python3.11 -m pip install -r requirements.txt
+
+# Collect static files
+python3.11 manage.py collectstatic --noinput
+
+# Apply database migrations
+python3.11 manage.py migrate
