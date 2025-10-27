@@ -37,20 +37,20 @@
                                     <a class="nav-link" href="{% url 'home' %}">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-blue" href="#about">ABOUT</a>
+                                    <a class="nav-link text-black" href="#about">ABOUT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-blue" href="{% url 'products' %}?sort=category&direction=desc">SESSIONS</a>
+                                    <a class="nav-link text-black" href="{% url 'products' %}?sort=category&direction=desc">SESSIONS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-blue" href="{% url 'contact_us' %}">CONTACT US</a>
+                                    <a class="nav-link text-black" href="{% url 'contact_us' %}">CONTACT US</a>
                                 </li>
                                 {% if request.user.is_authenticated %}
                                     <li class="nav-item">
-                                        <a href="{% url 'profile' %}" class="nav-link text-blue">MY PROFILE</a>
+                                        <a href="{% url 'profile' %}" class="nav-link text-black">MY PROFILE</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{% url 'account_logout' %}" class="nav-link text-blue">SIGN OUT</a>
+                                        <a href="{% url 'account_logout' %}" class="nav-link text-black">SIGN OUT</a>
                                     </li>
                                     {% if request.user.is_superuser %}
                                         <li class="nav-item">
