@@ -66,33 +66,33 @@ nav {
 .nav-item a {
     font-family: 'Roboto', sans-serif !important;
     font-weight: 700 !important;
-    color:#0015FF !important;
+    color:#000000 !important;
 }
 
 .nav-item a:hover {
     font-size: 1.05em;
-    background-color: #bbdfeb;
-    border-radius: 50px;
+    background-color: #392b52;
+    border-radius: 10px;
 }
 
 
 .empty-trolley {
     font-size: 1.3em;
-    color: #0015FF !important;
+    color: #000000 !important;
 }
 
 .loaded-trolley {
     font-size: 1.6em;
-    color:#3e048a !important;
+    color:#08014a !important;
 }
 
 
 .empty-trolley-value {
-    color: #0015FF !important;
+    color: #610005 !important;
 }
 
 .loaded-trolley-value {
-    color:#3e048a !important;
+    color:#3f0191 !important;
 }
 
 .manage-link {

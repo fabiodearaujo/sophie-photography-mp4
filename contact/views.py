@@ -16,10 +16,10 @@ def contact_us(request):
         Example from Codemy Youtube channel:
         https://www.youtube.com/watch?v=xNqnHmXIuzU"""
         send_mail(
-            (message_name + " - " + message_subject),
-            message_text,
-            message_email,
-            [settings.DEFAULT_FROM_EMAIL],
+            subject=(message_name + " - " + message_subject),
+            message=f"From: {message_email}\n\n{message_text}",
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[settings.DEFAULT_FROM_EMAIL],
         )
 
         messages.success(request, f'Thank you {message_name}! \
